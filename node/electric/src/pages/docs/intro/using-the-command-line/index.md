@@ -14,6 +14,12 @@ weight: 4
 
 ## Install
 
+<aside>
+
+Check for new releases to our CLI on our [Updates page](/updates/cli/).
+
+</aside>
+
 If you use a Unix-like system such as macOS or Linux, open your terminal and run:
 
 ```xml

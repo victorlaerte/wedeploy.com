@@ -24,6 +24,12 @@ Below you can find a list that contains all of them, including instructions on h
 
 ## JavaScript (Web & Node.js)
 
+<aside>
+
+Check for new releases to our JavaScript SDK on our [Updates page](/updates/apis/javascript/).
+
+</aside>
+
 You can use this by adding a script element in your HTML file or to load the library using NPM.
 
 ##### Installation
@@ -64,6 +70,12 @@ All our SDKs are available as open source projects. You can check the source cod
 <article id="3">
 
 ## Swift (iOS)
+
+<aside>
+
+Check for new releases to our Swift SDK on our [Updates page](/updates/apis/swift/).
+
+</aside>
 
 In order to start using you have to add it as Cocoapod in your `Podfile`.
 
@@ -123,6 +135,12 @@ All our SDKs are available as open source projects. You can check the source cod
 <article id="4">
 
 ## Java (Android)
+
+<aside>
+
+Check for new releases to our Android SDK on our [Updates page](/updates/apis/android/).
+
+</aside>
 
 You just need to add the following line to your `build.gradle` file.
 
