@@ -1,6 +1,6 @@
 ---
-title: Liferay DXP
-description: Check out what's new
+title: "Liferay DXP Image"
+description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -

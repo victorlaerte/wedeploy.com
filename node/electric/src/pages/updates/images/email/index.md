@@ -1,6 +1,6 @@
 ---
-title: Auth
-description: Check out what's new
+title: "Email Image"
+description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -

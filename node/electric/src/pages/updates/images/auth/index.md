@@ -1,6 +1,6 @@
 ---
-title: Data
-description: Check out what's new
+title: "Auth Image"
+description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -

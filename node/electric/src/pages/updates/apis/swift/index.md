@@ -1,6 +1,6 @@
 ---
-title: iOS
-description: Check out what's new
+title: "Swift SDK"
+description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -

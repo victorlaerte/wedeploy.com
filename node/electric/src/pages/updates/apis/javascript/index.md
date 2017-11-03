@@ -1,6 +1,6 @@
 ---
-title: JavaScript
-description: Check out what's new
+title: "JavaScript SDK"
+description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -

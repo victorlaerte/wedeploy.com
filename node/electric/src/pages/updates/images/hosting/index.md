@@ -1,6 +1,6 @@
 ---
-title: Hosting
-description: Check out what's new
+title: "Hosting Image"
+description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
