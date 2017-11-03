@@ -40,8 +40,8 @@ Here are the environment variables in action within a `wedeploy.json`.
 	"id": "myservice",
 	"image": "wedeploy/hosting:@site.version.image.hosting@",
 	"env": {
-		"WEDEPLOY_WEB_PATH": "dist",
-		"WEDEPLOY_WEB_ERROR_PATH": "myerrors",
+		"WEDEPLOY_WEB_PATH": "./dist",
+		"WEDEPLOY_WEB_ERROR_PATH": "./myerrors",
 	}
 }
 ```
@@ -51,7 +51,7 @@ Here are the environment variables in action within a `wedeploy.json`.
 
 ###### <span class="icon-16-alert"></span> Attention
 
-The folder specified in `WEDEPLOY_WEB_PATH` will be resolved relative to the folder where the `wedeploy.json` is located. In the example below, if `WEDEPLOY_WEB_PATH` is specified as `dist/`, then the `dist` folder must be next to `wedeploy.json`.
+The folder specified in `WEDEPLOY_WEB_PATH` will be resolved relative to the folder where the `wedeploy.json` is located. In the example below, if `WEDEPLOY_WEB_PATH` is specified as `./dist`, then the `dist` folder must be next to `wedeploy.json` in the root of that service directory.
 
 ```
 myapp
