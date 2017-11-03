@@ -16,6 +16,12 @@ weight: 1
 
 Our Email service enables you to send customized emails to your users and check on their status with just a few lines of code.
 
+<aside>
+
+Check for new releases to our Email Image on our [Updates page](/updates/images/email).
+
+</aside>
+
 </article>
 
 <article id="2">

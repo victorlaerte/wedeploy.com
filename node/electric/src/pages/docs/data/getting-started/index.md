@@ -10,9 +10,21 @@ weight: 1
 
 ###### {$page.description}
 
+<article id="1">
+
+## Introduction
+
 Our Data service enables you to store data securely to a cloud database, make complex queries instantly, and consume information in real-time.
 
-<article id="1">
+<aside>
+
+Check for new releases to our Data Image on our [Updates page](/updates/images/data).
+
+</aside>
+
+</article>
+
+<article id="2">
 
 ## Try it yourself
 
@@ -32,7 +44,7 @@ Check also the <a href="/tutorials/data-android/" target="_blank" data-senna-off
 
 </article>
 
-<article id="2">
+<article id="3">
 
 ## Configuring
 

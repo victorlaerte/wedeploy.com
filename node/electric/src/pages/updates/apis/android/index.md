@@ -4,7 +4,7 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
 -
-  version: 0.1.0
-  date: Aug 1st, 2017
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nulla libero, eleifend in euismod eget, fringilla id diam. Proin quis interdum ipsum.
+  version: 1.0.0
+  date: Oct 5th, 2017
+  description: Initial release. Adds BSD license.
 ---

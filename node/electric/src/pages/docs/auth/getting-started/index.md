@@ -10,9 +10,21 @@ weight: 1
 
 ###### {$page.description}
 
-Our Auth service allows you to avoid the headache of operating your own user management system. Features like creating accounts, resetting passwords, and updating profiles are easily accomplished with a few lines of code using our SDKs.
-
 <article id="1">
+
+## Introduction
+
+Our Auth service allows you to avoid the headache of operating your own user management system. Features like creating accounts, resetting passwords, and updating profiles are easily accomplished with a few lines of code.
+
+<aside>
+
+Check for new releases to our Auth Image on our [Updates page](/updates/images/auth).
+
+</aside>
+
+</article>
+
+<article id="2">
 
 ## Try it yourself
 
@@ -32,7 +44,7 @@ Check also the <a href="/tutorials/auth-android/" target="_blank" data-senna-off
 
 </article>
 
-<article id="2">
+<article id="3">
 
 ## Configuring
 

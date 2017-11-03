@@ -14,7 +14,13 @@ weight: 1
 
 ## Introduction
 
-Our Hosting service allows you to deliver HTML, CSS, JavaScript, or any other static files using powerful static hosting. It's super fast and will save you a lot of time.
+Our Hosting service allows you to deliver HTML, CSS, JavaScript, or any other static files using powerful static hosting. It's very fast and will save you a lot of time.
+
+<aside>
+
+Check for new releases to our Hosting Image on our [Updates page](/updates/images/hosting).
+
+</aside>
 
 </article>
 
