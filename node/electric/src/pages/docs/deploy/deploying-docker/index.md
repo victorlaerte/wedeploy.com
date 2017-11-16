@@ -94,7 +94,6 @@ What if you what to choose a specific port to expose on your service? You can do
 {
   "id": "myubuntu",
   "port": 4000
-  }
 }
 ```
 
@@ -104,7 +103,6 @@ You can also **block all external access** to your container by setting a port i
 {
   "id": "myubuntu",
   "port": 0
-  }
 }
 ```
 
