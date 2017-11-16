@@ -1,5 +1,5 @@
 ---
-title: "Liferay DXP Image"
+title: "Liferay DXP Service"
 description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:

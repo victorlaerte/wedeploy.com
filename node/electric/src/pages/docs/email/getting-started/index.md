@@ -18,7 +18,7 @@ Our Email service enables you to send customized emails to your users and check 
 
 <aside>
 
-Check for new releases to our Email Image on our [Updates page](/updates/images/email).
+Check for new releases to our Email Image on our [Updates page](/updates/services/email).
 
 </aside>
 

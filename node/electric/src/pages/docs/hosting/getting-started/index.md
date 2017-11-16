@@ -18,7 +18,7 @@ Our Hosting service allows you to deliver HTML, CSS, JavaScript, or any other st
 
 <aside>
 
-Check for new releases to our Hosting Image on our [Updates page](/updates/images/hosting).
+Check for new releases to our Hosting Image on our [Updates page](/updates/services/hosting).
 
 </aside>
 

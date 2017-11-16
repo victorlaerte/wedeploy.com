@@ -1,5 +1,5 @@
 ---
-title: "Data Image"
+title: "Data Service"
 description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:

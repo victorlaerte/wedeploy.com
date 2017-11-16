@@ -18,7 +18,7 @@ Our Data service enables you to store data securely to a cloud database, make co
 
 <aside>
 
-Check for new releases to our Data Image on our [Updates page](/updates/images/data).
+Check for new releases to our Data Image on our [Updates page](/updates/services/data).
 
 </aside>
 

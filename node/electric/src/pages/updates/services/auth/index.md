@@ -1,5 +1,5 @@
 ---
-title: "Auth Image"
+title: "Auth Service"
 description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:

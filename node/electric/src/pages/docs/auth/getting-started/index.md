@@ -18,7 +18,7 @@ Our Auth service allows you to avoid the headache of operating your own user man
 
 <aside>
 
-Check for new releases to our Auth Image on our [Updates page](/updates/images/auth).
+Check for new releases to our Auth Image on our [Updates page](/updates/services/auth).
 
 </aside>
 

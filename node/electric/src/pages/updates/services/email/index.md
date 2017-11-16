@@ -1,5 +1,5 @@
 ---
-title: "Email Image"
+title: "Email Service"
 description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:

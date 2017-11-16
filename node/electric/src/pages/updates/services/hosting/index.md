@@ -1,5 +1,5 @@
 ---
-title: "Hosting Image"
+title: "Hosting Service"
 description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
