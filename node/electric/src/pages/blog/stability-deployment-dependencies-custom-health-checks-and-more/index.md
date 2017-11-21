@@ -1,7 +1,7 @@
 ---
 title: "Stability, Deployment Dependencies, Custom Health Checks, and more!"
 description: "It has been a busy few weeks for the WeDeploy team and we are excited to share some of the new features and fixes we've been working on!"
-date: "November 15, 2017"
+date: "November 21, 2017"
 author: "Jonni Lundy"
 layout: "blog"
 ---
