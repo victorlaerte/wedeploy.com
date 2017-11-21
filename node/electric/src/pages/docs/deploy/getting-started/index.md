@@ -6,7 +6,7 @@ layout: "guide"
 weight: 1
 ---
 
-# Deploy
+### Deploy
 
 ###### {$page.description}
 
@@ -76,76 +76,11 @@ In order to make sure we know where you want us to scan, we require that you pla
 }
 ```
 
-</article>
+<aside>
 
-<article id="3">
+To learn more about using the `wedeploy.json` to configure your project's behavior, see our [Configuring Deployments Page](/docs/deploy/configuring-deployments/)
 
-## Configuring
-
-All WeDeploy services use a `wedeploy.json` file to defines the service's attributes and configurations.
-
-Once you push your local project to WeDeploy, we scan it for `wedeploy.json` files. when we find one, we serve that whole directory as a part of the service you defined within.
-
-For example, let's say you have a folder named `myservice` that uses our Hosting, Data, and Email services. This is what your project's file structure could look like:
-
-```
-myservice
-├── nodejs
-│   ├── package.json
-│   └── wedeploy.json
-└── hosting
-    ├── wedeploy.json
-    └── index.html
-```
-
-WeDeploy uses this JSON file to reference a service by ID in case it's already created. If a service with a matching ID does not exist, it creates a new service for you.
-
-**Using .gitignore**
-
-WeDeploy does not deploy anything that is declared in your `.gitignore` file as long this config file is in the same folder as your `wedeploy.json`.
-
-</article>
-
-<article id="4">
-
-## Reference
-
-<div class="table-container">
-
-| Field             | Type    | Default | Description                  |
-| ----------------- | ------- | ------- | ---------------------------- |
-| **id**            | String  | random  | Unique service ID            |
-| **image**         | String  |         | Service image type           |
-| **env**           | Object  |         | Exported variables           |
-| **port**          | Number  | 80      | Exposed service port         |
-| **cpu**           | Number  | 1       | Number of processing units   |
-| **scale**         | Number  | 1       | Maximum number of instances  |
-| **memory**        | Number  | 512     | Amount of computing memory   |
-| **volume**        | String  |         | Persistant database storage  |
-| **customDomains** | Array   |         | Set custom domain names      |
-
-</div>
-
-**Usage:**
-
-Here are all the configuration fields in action within a `wedeploy.json`.
-
-```application/json
-{
-	"id": "myservice",
-	"image": "wedeploy/example",
-	"env": {
-		"DB_USER": "root",
-		"DB_PASSWORD": "pass123",
-	},
-	"port": 8080,
-	"cpu": 2,
-	"scale": 2,
-	"memory": 2048,
-	"volume": "/opt/storage",
-	"customDomains": ["myservice.com", "www.myservice.com"]
-}
-```
+</aside>
 
 </article>
 
@@ -166,3 +101,7 @@ We have created a whole array of tutorials to teach you how to start using WeDep
 * **<a data-senna-off target="_blank" href="/tutorials/docker/">Docker</a>**: Deploy a Docker container.
 
 </article>
+
+## What's next?
+
+Learn more about how to [configure your deployments](/docs/deploy/configuring-deployments/).

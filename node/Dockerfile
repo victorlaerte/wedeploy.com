@@ -12,7 +12,6 @@ ENV LANG=C.UTF-8
 RUN set -ex && \
     echo 'deb http://deb.debian.org/debian jessie-backports main' \
       > /etc/apt/sources.list.d/jessie-backports.list && \
-
     apt update -y && \
     apt install -t \
       jessie-backports \

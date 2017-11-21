@@ -3,16 +3,17 @@
   "name": "wedeploy.com",
   "version": "2.0.0",
   "scripts": {
-    "build": "electric build"
+    "build": "electric build",
+    "start": "electric"
   },
   "dependencies": {
     "moment": "2.0.0"
   },
   "devDependencies": {
     "electric-cli": "^2.1.7",
-    "electric-marble-components": "^2.0.1",
-    "marble": "^2.12.0",
+    "electric-marble-components": "^3.0.2",
+    "marble": "^3.1.3",
     "metal-toast": "^2.0.0",
-    "metal-toggler": "^2.0.0"
+    "metal-toggler": "^2.2.0"
   }
 }

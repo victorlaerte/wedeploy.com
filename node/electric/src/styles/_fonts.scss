@@ -1,0 +1,16 @@
+/* Font Face
+/* ========================================================================== */
+
+@font-face {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Circular Std Book"), local("Circular-Std-Book"), url("../fonts/lineto-circular-book.woff2") format("woff2"), url("../fonts/lineto-circular-book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Circular Std Black"), local("Circular-Std-Black"), url("../fonts/lineto-circular-black.woff2") format("woff2"), url("../fonts/lineto-circular-black.woff") format("woff");
+}

@@ -1,5 +1,102 @@
-@import "docs/feedback";
-@import "docs/newsletter";
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.docs .sidebar-list .sidebar-link-selected {
+  background-color: transparent;
+}
+
+.docs .sidebar-item .sidebar-list .sidebar-link-selected {
+  background-color: rgba($accent, 0.1);
+}
+
+/* ==========================================================================
+   Feedback
+   ========================================================================== */
+
+.docs .feedback {
+  background: rgba($primary, 0.02);
+  border-radius: 4px;
+  padding: 36px 0;
+  margin: 60px 0 24px;
+  text-align: center;
+  width: 100%;
+
+  p {
+    line-height: 36px;
+    font-family: $font-primary;
+    font-weight: 600;
+    font-size: 19px;
+    color: rgba($primary, 0.8);
+    margin: 0 0 24px;
+  }
+}
+
+.docs .feedback-btn {
+  margin: 0 12px 12px;
+  width: 134px;
+}
+
+/* ==========================================================================
+   Newsletter
+   ========================================================================== */
+
+.newsletter {
+  background: rgba($primary, .02);
+  padding: 36px 0;
+
+  @media (min-width: $screen-md-min) {
+    padding: 72px 0;
+  }
+}
+
+.newsletter .btn-sm {
+  @media (min-width: $screen-md-min) {
+    width: auto;
+  }
+}
+
+.newsletter .newsletter-subtitle {
+  color: rgba($primary, 0.8);
+  font-size: $font-h4;
+  font-family: $font-primary;
+  font-weight: 700;
+  line-height: calc(1.5rem * #{$lineHeight});
+  margin: 0 0 12px;
+  text-align: center;
+
+  @media (min-width: $screen-md-min) {
+    line-height: calc(2rem * #{$lineHeight});
+  }
+}
+
+.newsletter .newsletter-description {
+  color: rgba($primary, 0.6);
+  font-size: $font-p;
+  font-family: $font-secondary;
+  font-weight: 400;
+  line-height: calc(1rem * #{$lineHeight});
+  text-align: center;
+
+  margin: 0 0 24px;
+
+  @media (min-width: $screen-md-min) {
+    margin: 0 0 48px;
+  }
+}
+
+.newsletter .form-group {
+  margin-bottom: 12px;
+
+  @media (min-width: $screen-md-min) {
+    margin-bottom: 0;
+  }
+}
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
 
 .docs .guide-content h1 {
 	@include h3;
@@ -15,4 +112,17 @@
 
 .guide-btn-cta .btn span[class*="icon-16-external"] {
 	top: 7px;
+}
+
+.docs-home-middle-description {
+  font-weight: 400;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+.docs .form-control,
+.docs .search .form-control {
+  font-weight: 400;
 }

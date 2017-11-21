@@ -7,6 +7,7 @@ export const controller = app => {
 
   app.use('/blog', express.static(path.join(electricPath, 'blog')));
   app.use('/docs', express.static(path.join(electricPath, 'docs')));
+  app.use('/fonts', express.static(path.join(electricPath, 'fonts')));
   app.use('/images', express.static(path.join(electricPath, 'images')));
   app.use('/js', express.static(path.join(electricPath, 'js')));
   app.use('/scripts', express.static(path.join(electricPath, 'scripts')));

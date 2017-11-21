@@ -1,0 +1,21 @@
+.tooltip.bottom .tooltip-inner {
+  background: $primary;
+  color: white;
+  font-family: $font-secondary;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0 12px;
+  line-height: 36px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10px); // parent padding 5px 0
+    border-radius: 4px;
+    background: rgba($white, 0.1);
+    z-index: 1;
+  }
+}

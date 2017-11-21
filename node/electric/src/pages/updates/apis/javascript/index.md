@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 4.1.0
+  date: Oct 30th, 2017
+  description: Added `updateUser` method to Auth.
+ -
   version: 4.0.2
   date: Oct 26th, 2017
   description: Added support for ReactNative 16.

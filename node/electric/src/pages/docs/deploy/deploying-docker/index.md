@@ -3,7 +3,7 @@ title: "Deploying Docker"
 description: "Launch a Docker application in few seconds."
 headerTitle: "Deploy"
 layout: "guide"
-weight: 7
+weight: 8
 ---
 
 ### Docker
@@ -64,6 +64,65 @@ myservice
 └── wp
     ├── Dockerfile
     └── wedeploy.json
+```
+
+</article>
+
+<article id="4">
+
+## Ports
+
+**Automatic Detection**
+
+When deploying a docker image, WeDeploy will look inside the `Dockerfile` to see what ports are exposed. If there is only one, then we will use that one, but if there are multiple ports exposed, we will use the lowest value port.
+
+For example, if you had a `Dockerfile` like this:
+
+```
+FROM ubuntu
+EXPOSE 3000
+EXPOSE 4000
+```
+
+We would automatically expose port `3000` for your service so that it can be accessed publicly via your service URL (_service-project.wedeploy.io_).
+
+**Manual Configuration**
+
+What if you what to choose a specific port to expose on your service? You can do this by setting a value on the `port` value in your `wedeploy.json`.
+
+```application/json
+{
+  "id": "myubuntu",
+  "port": 4000
+}
+```
+
+You can also **block all external access** to your container by setting a port in your `wedeploy.json` that is not exposed in your `Dockerfile`.
+
+```application/json
+{
+  "id": "myubuntu",
+  "port": 0
+}
+```
+
+</article>
+
+<article id="5">
+
+## Docker Hub
+
+Calling a public image from Docker Hub can be done with a single line of code in your `wedeploy.json` file. Use the `image` parameter to tell WeDeploy what Docker Hub image to pull. Your `wedeploy.json` could look like this to deploy a MySQL database:
+
+```application/json
+{
+  "id": "mydb",
+  "image": "mysql",
+  "volume": "/var/lib/mysql",
+  "env": {
+    "MYSQL_ROOT_PASSWORD": "pass"
+  }
+}
 ```
 
 </article>

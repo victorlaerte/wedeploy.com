@@ -216,7 +216,7 @@ WeDeploy
 
 <article id="5">
 
-## Update user
+## Update currentUser
 
 ```javascript
 var currentUser = WeDeploy.auth('https://<serviceID>-<projectID>.wedeploy.io').currentUser;
@@ -235,27 +235,50 @@ currentUser
 		// Not updated.
 	});
 ```
+
+</article>
+
+<article id="update-user">
+
+## Update user
+
+```javascript
+WeDeploy
+  .auth('https://<serviceID>-<projectID>.wedeploy.io')
+  .updateUser(userId, {
+    password: "password",
+    email: "eleven@hawkinslabs.com",
+    name: "Eleven",
+    photoUrl: "https://hawkinslabs.com/011/profile.jpg"
+  })
+  .then(function() {
+    // Successfully updated.
+  })
+  .catch(function(err) {
+    // Not updated.
+  });
+```
 ```swift
 WeDeploy
-	.auth('https://<serviceID>-<projectID>.wedeploy.io')
-	.updateUser(id: "userId" , email: "eleven@hawkinslabs.com", password: "password", name: "Eleven")
-	.then { _ -> Void in
-		// Successfully updated
-	}
-	.catch { err in
-		// Not updated.
-	}
+  .auth('https://<serviceID>-<projectID>.wedeploy.io')
+  .updateUser(id: "userId" , email: "eleven@hawkinslabs.com", password: "password", name: "Eleven")
+  .then { _ -> Void in
+    // Successfully updated
+  }
+  .catch { err in
+    // Not updated.
+  }
 ```
 ```text/x-java
 JSONObject fields = new JSONObject()
-	.put("email", "eleven@hawkinslabs.com")
-	.put("password", "newPassword")
-	.put("name", "Eleven");
+  .put("email", "eleven@hawkinslabs.com")
+  .put("password", "newPassword")
+  .put("name", "Eleven");
 
 WeDeploy
-	.auth("<auth-url>")
-	.updateUser("userId", fields)
-	.execute();
+  .auth("<auth-url>")
+  .updateUser("userId", fields)
+  .execute();
 ```
 
 </article>

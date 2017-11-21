@@ -3,7 +3,7 @@ title: "Continuous Deployment"
 description: "Trigger a new deployment every time you push changes to a designated branch of your GitHub repository."
 headerTitle: "Deploy"
 layout: "guide"
-weight: 2
+weight: 3
 ---
 
 ### {$page.title}

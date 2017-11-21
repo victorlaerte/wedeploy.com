@@ -3,7 +3,7 @@ title: "Deploying Ruby"
 description: "Launch a Ruby application in few seconds."
 headerTitle: "Deploy"
 layout: "guide"
-weight: 4
+weight: 5
 ---
 
 ### Ruby
