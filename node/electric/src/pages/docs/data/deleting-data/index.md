@@ -3,7 +3,7 @@ title: "Deleting Data"
 description: "Destroy an existing field, document or collection in the database."
 headerTitle: "Data"
 layout: "guide"
-weight: 8
+weight: 9
 ---
 
 ### {$page.title}

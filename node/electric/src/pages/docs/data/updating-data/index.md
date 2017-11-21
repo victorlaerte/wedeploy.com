@@ -3,7 +3,7 @@ title: "Updating Data"
 description: "Update an existing record in the database with certain attributes."
 headerTitle: "Data"
 layout: "guide"
-weight: 7
+weight: 8
 ---
 
 ### {$page.title}

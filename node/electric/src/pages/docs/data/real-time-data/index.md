@@ -20,7 +20,7 @@ If you are unfamiliar with our API, please visit the [API Clients](/docs/intro/a
 
 ## Watching data changes
 
-We presented a lot of features for data filtering and search. You may be wondering where the real-time aspect is in all of this. Well, it's throughout the features we just presented to you. To access our data in real-time, all we need to do is change the *WeDeploy* API  `get` method to use to the `watch` method:
+To access our data in real-time, all we need to do is change from the `get` method to the `watch` method:
 
 ```javascript
 WeDeploy
@@ -58,7 +58,7 @@ WeDeploy
 	.on("fail", error -> System.out.println(error));
 ```
 
-Now every time the storage detects changes that affect the query you're watching, you will receive a changes notification with the response body you'd receive if you had done an HTTP GET instead. Furthermore, every time this change leads to an HTTP error response, you'll receive the error object in a fail notification on the client.
+Now every time the database detects changes that affect the query you're watching, you will receive a changes notification with the response body you'd receive if you had done a GET request instead. Furthermore, every time this change leads to an error response, you'll receive the error object in a fail notification on the client.
 
 </article>
 
@@ -108,6 +108,12 @@ WeDeploy
 	.on("changes", data -> System.out.println(data))
 	.on("fail", error -> System.out.println(error));
 ```
+
+<aside>
+
+For more examples of filters you can use with `watch`, see our [Filtering Data page](/docs/data/filtering-data/)
+
+</aside>
 
 </article>
 

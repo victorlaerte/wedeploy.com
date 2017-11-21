@@ -3,7 +3,7 @@ title: "Filtering Data"
 description: "Use our simple filters to make complex queries with a few lines of code."
 headerTitle: "Data"
 layout: "guide"
-weight: 9
+weight: 7
 ---
 
 ### {$page.title}
@@ -487,3 +487,7 @@ Above we are finding all the movies that have ratings above 8.5 and sorting them
 You can either order in ascending (`asc`) or descending (`desc`) order. Ascending is the default.
 
 </article>
+
+## What's next?
+
+Now that you've learned how to search, you can start [updating data](/docs/data/updating-data/).
