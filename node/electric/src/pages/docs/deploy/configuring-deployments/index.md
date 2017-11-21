@@ -16,7 +16,7 @@ weight: 2
 
 All WeDeploy services use a `wedeploy.json` file to defines the service's attributes and configurations.
 
-Once you push your local project to WeDeploy, we scan it for `wedeploy.json` files. when we find one, we serve that whole directory as a part of the service you defined within.
+Once you push your local project to WeDeploy, we scan it for `wedeploy.json` files. When we find one, we serve that whole directory as a part of the service you defined within.
 
 For example, let's say you have a project named `app` that uses our Data service with a Node.js application. This is what your project's file structure could look like:
 
