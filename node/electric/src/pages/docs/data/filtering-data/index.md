@@ -80,6 +80,12 @@ WeDeploy
   .where('ratings', '>', 8.3)
   .get('movies')
 ```
+```swift
+  WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(field: "ratings", op: ">", value: 8.3)
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where the ratings field is greater than 8.3.
 
@@ -91,6 +97,13 @@ WeDeploy
   .where('ratings', '>', 8.3)
   .where('theater', '=', 'Regal')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(field: "ratings", op: ">", value: 8.3)
+  .where(field: "theaer", op: "=", value: "Regal")
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the movies collection where the ratings field is greater than 8.3 and the theater is Regal.
@@ -107,6 +120,13 @@ WeDeploy
   .where('theater', '=', 'Regal')
   .or('theater', '=', 'CMA')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(field: "theater", op: "=", value: "Regal")
+  .or(field: "theater", op: "=", value: "CMA")
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the movies collection where the theater is Regal or CMA.
@@ -129,6 +149,13 @@ WeDeploy
   .lte('ratings', '9.5')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .gt(field: "ratings", value: "7")
+  .lte(field: "ratings", value: "9.5")
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where the ratings are greater than 7 and less than or equal to 9.5.
 
@@ -141,6 +168,12 @@ WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
   .range('ratings', 4, 8)
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .range(field: "ratings", range: Range(from: 4, to: 8))
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the movies collection where the ratings are between 4 and 8.
@@ -155,6 +188,12 @@ WeDeploy
   .none('theaters', 'Regal')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .none(field: "theaters", value: ["Regal"])
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where the theater is not Regal.
 
@@ -165,6 +204,12 @@ WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
   .none('theaters', 'Regal', 'AMC')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .none(field: "theaters", value: ["Regal", "AMC"])
+  .get(resourcePath: "movies")
 ```
 
 <h5 id="any">any</h5>
@@ -177,6 +222,12 @@ WeDeploy
   .any('theaters', 'CMA')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .any(field: "theaters", value: ["CMA"])
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where the theater is CMA.
 
@@ -188,6 +239,12 @@ WeDeploy
   .any('theaters', 'Regal', 'AMC')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .any(field: "theaters", value: ["Regal", "AMC"])
+  .get(resourcePath: "movies")
+```
 
 <h5 id="exists">exists</h5>
 
@@ -198,6 +255,12 @@ WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
   .exists('theaters')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .exists(field: "theaters")
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the movies collection where there is any value for theater.
@@ -222,6 +285,12 @@ WeDeploy
   .match('title', "Sith's revenge")
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .match(field: "title", pattern: "Sith's revenge")
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where the title contains "sith's" or "revenge".
 
@@ -238,6 +307,12 @@ WeDeploy
   .match('title', 'sith +Revenge -jedi')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .match(field: "title", pattern: "sith +Reveng -jedi")
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where the title has to contain "revenge", does not contain "jedi", and might contain "sith".
 
@@ -250,6 +325,12 @@ WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
   .phrase('title', 'revenge of the')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .phrase(field: "title", value: "revenge of the")
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the movies collection where the title contains "revenge of the".
@@ -264,6 +345,12 @@ WeDeploy
   .phrase('title', 'reven')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .phrase(field: "title", value: "reven")
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the movies collection where a word in the title begins with "reven".
 
@@ -276,6 +363,12 @@ WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
   .similar('title', 'sth')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .similar(field: "title", query: "sth")
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the movies collection where the title contains similar content to "sth".
@@ -318,6 +411,9 @@ location: "20, 40"
 // Array in the format
 location: [20, 40]
 ```
+```swift
+GeoPoint(lat: 20, long: 0)
+```
 
 <aside>
 
@@ -335,6 +431,12 @@ WeDeploy
   .boundBox('location', '20,0', '0,20')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .polygon(field: "location", points: [GeoPoint(lat: 20, long: 0), GeoPoint(lat: 0, long: 20)])
+  .get(resourcePath: "movies")
+```
 
 Above we are getting all documents in the theaters collection where the location is within a geo box with the top left coordinates of 20,0 and the bottom right coordinates of 0,20.
 
@@ -347,6 +449,12 @@ WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
   .distance('location', '20,0', '40mi')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .distance(field: "location", latitude: 20, longitude: 0, distance: .mile(40))
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting all documents in the theaters collection where the location is within 40 miles of 20,0.
@@ -381,6 +489,13 @@ WeDeploy
   .limit(2)
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .match(field: "title", pattern: "Revenge")
+  .limit(2)
+  .get(resourcePath: "movies")
+```
 
 Above we are getting a maximum of 2 documents in the movies collection where the title contains "Revenge".
 
@@ -395,6 +510,13 @@ WeDeploy
   .offset(5)
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .match(field: "title", pattern: "Revenge")
+  .offset(5)
+  .get(resourcePath: "movies")
+```
 
 Above we are getting documents in the movies collection where the title contains "Revenge" but skipping the first 5 results.
 
@@ -408,6 +530,13 @@ WeDeploy
   .match('title', 'Revenge')
   .highlight('title')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .match(field: "title", pattern: "Revenge")
+  .highlight("title")
+  .get(resourcePath: "movies")
 ```
 
 Above we are getting documents in the movies collection where the title contains "Revenge" and wrapping all "revenge" words in `<em>`. This would be the result.
@@ -429,11 +558,20 @@ WeDeploy
   .aggregate('my_averages', 'ratings', 'avg')
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .aggregate(name: "my_averages", field: "ratings", op: "avg")
+  .get(resourcePath: "movies")
+```
 
 Above we are finding the average of all the movie ratings in our collection. This is the syntax of the aggregation parameters.
 
 ```javascript
 .aggregate('unique_aggregation_name', 'collection_field', 'aggregation_type')
+```
+```swift
+.aggregate(name: String, field: String, op: String)
 ```
 
 You can choose to use any of these aggregations.
@@ -467,6 +605,13 @@ WeDeploy
   .count()
   .get('movies')
 ```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(field: "ratings", op: ">", value: 8.5)
+  .count()
+  .get(resourcePath: "movies")
+```
 
 Above we are finding the number of movies that have ratings above 8.5.
 
@@ -480,6 +625,13 @@ WeDeploy
   .where('ratings', '>', 8.5)
   .sort('title', 'desc')
   .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(field: "ratings", op: ">", value: 8.5)
+  .orderBy(field: "title", order: .DESC)
+  .get(resourcePath: "movies")
 ```
 
 Above we are finding all the movies that have ratings above 8.5 and sorting them by their title in descending order.
