@@ -114,11 +114,11 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.field("ratings", ">", 8.3))
-	.where(Filter.field("theater", "=", "Regal"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.field("ratings", ">", 8.3))
+  .where(Filter.field("theater", "=", "Regal"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the ratings field is greater than 8.3 and the theater is Regal.
@@ -145,11 +145,11 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.field("theater", "=", "Regal")
-  	.or(Filter.field("theater", "=", "CMA")))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.field("theater", "=", "Regal")
+  .or(Filter.field("theater", "=", "CMA")))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the theater is Regal or CMA.
@@ -181,11 +181,11 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.gt("ratings", 7)
-	.and(Filter.lte("ratings", 9.5)))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.gt("ratings", 7)
+  .and(Filter.lte("ratings", 9.5)))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the ratings are greater than 7 and less than or equal to 9.5.
@@ -208,10 +208,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.range("ratings", 4, 8))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.range("ratings", 4, 8))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the ratings are between 4 and 8.
@@ -234,10 +234,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.none("theaters", "Regal"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.none("theaters", "Regal"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the theater is not Regal.
@@ -258,10 +258,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.none("theaters", "Regal", "AMC"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.none("theaters", "Regal", "AMC"))
+  .get("movies")
+  .execute();
 ```
 
 <h5 id="any">any</h5>
@@ -282,10 +282,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.any("theaters", "CMA"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.any("theaters", "CMA"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the theater is CMA.
@@ -306,10 +306,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.any("theaters", "Regal", "AMC"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.any("theaters", "Regal", "AMC"))
+  .get("movies")
+  .execute();
 ```
 
 <h5 id="exists">exists</h5>
@@ -330,10 +330,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.exists("theaters"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.exists("theaters"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where there is any value for theater.
@@ -366,10 +366,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.match("title", "Sith's revenge"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.match("title", "Sith's revenge"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the title contains "sith's" or "revenge".
@@ -395,10 +395,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.match("title", "sith +Revenge -jedi"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.match("title", "sith +Revenge -jedi"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the title has to contain "revenge", does not contain "jedi", and might contain "sith".
@@ -421,10 +421,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.phrase("title", "revenge of the"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.phrase("title", "revenge of the"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the title contains "revenge of the".
@@ -447,10 +447,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.prefix("title", "reven"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.prefix("title", "reven"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where a word in the title begins with "reven".
@@ -473,10 +473,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.similar("title", "sth"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.similar("title", "sth"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the movies collection where the title contains similar content to "sth".
@@ -550,10 +550,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.boundingBox("location", "20,0", "0,20"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.boundingBox("location", "20,0", "0,20"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the theaters collection where the location is within a geo box with the top left coordinates of 20,0 and the bottom right coordinates of 0,20.
@@ -576,10 +576,10 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.distance("location", "20.0,0", "40mi"))
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.distance("location", "20.0,0", "40mi"))
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting all documents in the theaters collection where the location is within 40 miles of 20,0.
@@ -623,11 +623,11 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.match("title", "Revenge"))
-	.limit(2)
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.match("title", "Revenge"))
+  .limit(2)
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting a maximum of 2 documents in the movies collection where the title contains "Revenge".
@@ -652,11 +652,11 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.match("title", "Revenge"))
-	.offset(5)
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.match("title", "Revenge"))
+  .offset(5)
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting documents in the movies collection where the title contains "Revenge" but skipping the first 5 results.
@@ -681,11 +681,11 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data("https://<serviceID>-<projectID>.wedeploy.io")
-	.where(Filter.match("title", "Revenge"))
-	.highlight("title")
-	.get("movies")
-	.execute();
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .where(Filter.match("title", "Revenge"))
+  .highlight("title")
+  .get("movies")
+  .execute();
 ```
 
 Above we are getting documents in the movies collection where the title contains "Revenge" and wrapping all "revenge" words in `<em>`. This would be the result.
