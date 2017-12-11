@@ -40,7 +40,7 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.get("movies")
 	.execute();
 ```
@@ -122,7 +122,7 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.orderBy("rating", SortOrder.DESCENDING)
 	.get("movies")
 	.execute();
@@ -168,7 +168,7 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.where(lt("year", 2000).or(gt("rating", 8.5)))
 	.get("movies")
 	.execute();

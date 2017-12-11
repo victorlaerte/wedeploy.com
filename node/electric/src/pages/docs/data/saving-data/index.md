@@ -52,7 +52,7 @@ JSONObject movieJsonObject = new JSONObject()
 	.put("rating", 8.7);
 
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.create("movies", movieJsonObject)
 	.execute();
 ```
@@ -131,7 +131,7 @@ JSONArray moviesJsonArray = new JSONArray()
 	.put(movie2JsonObject);
 
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.create("movies", moviesJsonArray)
 	.execute();
 ```

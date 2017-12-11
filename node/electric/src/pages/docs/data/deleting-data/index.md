@@ -57,18 +57,21 @@ WeDeploy
 ```text/x-java
 // Deleting a collection
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
-  .delete('movies')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .delete("movies")
+  .execute()
 
 // Deleting a document
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
-  .delete('movies/star_wars_v')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .delete("movies/star_wars_v")
+  .execute()
 
 // Deleting a document field
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
-  .delete('movies/star_wars_v/rating')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .delete("movies/star_wars_v/rating")
+  .execute()
 ```
 
 **Warning**: The `delete` function is irreversible. Any deleted document or collection is completely erased and cannot be retrieved.

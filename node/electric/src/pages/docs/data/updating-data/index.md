@@ -46,7 +46,7 @@ JSONObject movieJsonObject = new JSONObject()
 	.put("rating", 9.1);
 
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.update("movies/115992383516607958", movieJsonObject)
 	.execute();
 ```
@@ -86,7 +86,7 @@ JSONObject movieJsonObject = new JSONObject()
   .put("title", "Avengers");
 
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .replace("movies/115992383516607958", movieJsonObject)
   .execute();
 ```

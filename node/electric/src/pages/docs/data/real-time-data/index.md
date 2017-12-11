@@ -71,7 +71,7 @@ socket.on([.changes, .error]) { data in
 ```
 ```text/x-java
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .watch("movies")
   .on("changes", data -> System.out.println(data))
   .on("fail", error -> System.out.println(error));
@@ -113,7 +113,7 @@ socket.on([.changes, .error]) { data in
 ```
 ```text/x-java
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .limit(1)
   .orderBy("id", SortOrder.DESCENDING)
   .watch("movies")
@@ -151,7 +151,7 @@ socket = WeDeploy
 socket.on([.create, .error]) { data in
   switch(data.type) {
   case .create:
-    print("changes \(data.document)")
+    print("create \(data.document)")
   case .error:
     print("error \(data.document)")
   default:
@@ -161,7 +161,7 @@ socket.on([.create, .error]) { data in
 ```
 ```text/x-java
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .watch("movies")
   .on("create", data -> System.out.println(data))
   .on("fail", error -> System.out.println(error));
@@ -195,7 +195,7 @@ socket = WeDeploy
 socket.on([.delete, .error]) { data in
   switch(data.type) {
   case .delete:
-    print("changes \(data.document)")
+    print("delete \(data.document)")
   case .error:
     print("error \(data.document)")
   default:
@@ -205,7 +205,7 @@ socket.on([.delete, .error]) { data in
 ```
 ```text/x-java
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .watch("movies")
   .on("delete", data -> System.out.println(data))
   .on("fail", error -> System.out.println(error));
@@ -239,7 +239,7 @@ socket = WeDeploy
 socket.on([.update, .error]) { data in
   switch(data.type) {
   case .update:
-    print("changes \(data.document)")
+    print("update \(data.document)")
   case .error:
     print("error \(data.document)")
   default:
@@ -249,7 +249,7 @@ socket.on([.update, .error]) { data in
 ```
 ```text/x-java
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .watch("movies")
   .on("update", data -> System.out.println(data))
   .on("fail", error -> System.out.println(error));
@@ -287,7 +287,7 @@ socket = WeDeploy
 socket.on([.update, .error]) { data in
   switch(data.type) {
   case .update:
-    print("changes \(data.document)")
+    print("update \(data.document)")
   case .error:
     print("error \(data.document)")
   default:
@@ -297,7 +297,7 @@ socket.on([.update, .error]) { data in
 ```
 ```text/x-java
 WeDeploy
-  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
   .where(equal("category", "cinema").or("category", "cartoon"))
   .watch("movies")
   .on("update", data -> System.out.println(data))

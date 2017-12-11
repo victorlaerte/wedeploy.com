@@ -44,7 +44,7 @@ WeDeploy
 ```
 ```text/x-java
 WeDeploy
-	.data('https://<serviceID>-<projectID>.wedeploy.io')
+	.data("https://<serviceID>-<projectID>.wedeploy.io")
 	.where(similar("title", "The attack an awakened Jedi uses to strike a Sith is pure force!"))
 	.search("movies")
 	.execute();
