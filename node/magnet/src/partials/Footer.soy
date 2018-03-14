@@ -3,6 +3,8 @@
 /**
  */
 {template .render}
+  {@param year: ?}
+
   <footer class="footer">
     <h2 class="footer-heading">WeDeploy</h2>
     <nav class="footer-nav -learn">
@@ -33,6 +35,6 @@
         <li><a class="footer-icon -github" href="https://github.com/wedeploy" aria-label="GitHub"></a></li>
       </ul>
     </nav>
-    <p class="footer-copyright">Copyright © 2018 Liferay, Inc.</p>
+    <p class="footer-copyright">Copyright © {$year} Liferay, Inc.</p>
   </footer>
 {/template}
