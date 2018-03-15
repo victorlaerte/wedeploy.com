@@ -1,9 +1,12 @@
+'use strict';
+
+import {isServerSide} from 'metal';
 import Component from 'metal-component';
 import Soy from 'metal-soy';
-import templates from './Footer.soy.js';
-import {isServerSide} from 'metal';
 
-export default class Footer extends Component {
+import templates from './Footer.soy.js';
+
+class Footer extends Component {
 	attached() {
 		if (isServerSide()) {
 			return;
@@ -13,6 +16,9 @@ export default class Footer extends Component {
 	rendered() {
 		this.year = new Date().getFullYear();
 	}
-}
+
+};
 
 Soy.register(Footer, templates);
+
+export default Footer;
