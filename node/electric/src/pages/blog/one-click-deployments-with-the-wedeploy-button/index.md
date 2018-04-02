@@ -20,31 +20,9 @@ Why talk about it when you could just see it live? Click the button below to **d
 
 If you want to try other buttons like this, check our [new GitHub organization with more than 60 examples](https://github.com/wedeploy-examples) including [Node.js](https://github.com/wedeploy-examples/nodejs-example), [Wordpress](https://github.com/wedeploy-examples/wordpress-example), [Rocket.Chat](https://github.com/wedeploy-examples/rocketchat-example).
 
-#### How It Works
-
-We created an endpoint that you can call with a Git repository as a parameter. From there, we will clone and deploy your project.
-
 <figure>
   <img src="/images/blog/post-28--0.gif" alt="WeDeploy Button in Action">
 </figure>
-
-To improve your experience even more, we added support to the most popular Git providers like **[GitHub](https://github.com/), [GitLab](https://gitlab.com/) and [Bitbucket](https://bitbucket.org)**.
-
-Besides that, we created a button that you can use to promote your projects and help users get started quickly. Here are the two things you'll need when inserting your own button.
-
-**Button Image**
-
-```text
-https://cdn.wedeploy.com/images/deploy.svg
-```
-
-**Button Link**
-
-```xml
-https://console.wedeploy.com/deploy?repo=<your-git-repository>
-```
-
-As you can see, the `repo` param is how you tell WeDeploy what to deploy.
 
 #### Add To Your Readme
 
@@ -64,7 +42,29 @@ You can also add it anywhere in your website with a simple HTML snippet.
 </a>
 ```
 
-#### Custom Git Branch
+#### How It Works
+
+We created a button that you can use to promote your projects and help users get started quickly.
+
+In order to use this functionality, all you have to do is point to a Git repository. From there, we will clone and deploy your project.
+
+Here are the two things you'll need when inserting your own button.
+
+**Button Image**
+
+```text
+https://cdn.wedeploy.com/images/deploy.svg
+```
+
+**Button Link**
+
+```xml
+https://console.wedeploy.com/deploy?repo=<your-git-repository>
+```
+
+As you can see, the `repo` param is how you tell WeDeploy what to deploy.
+
+To improve your experience even more, we added support to the most popular Git providers like **[GitHub](https://github.com/), [GitLab](https://gitlab.com/) and [Bitbucket](https://bitbucket.org)**.
 
 What if you want to specify a Git branch to deploy? No problem, just include the branch path in the URL and we will fetch for you.
 
