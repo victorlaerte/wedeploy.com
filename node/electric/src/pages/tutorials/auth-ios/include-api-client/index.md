@@ -13,7 +13,7 @@ weight: 4
 
 Before we can make any requests to create or sign-in any users, we must connect the WeDeploy Swift API Client.
 
-To do this, go to `tutorial-auth-ios/app/Podfile` and include this line inside the target function of this file:
+To do this, go to `auth-ios-tutorial/app/Podfile` and include this line inside the target function of this file:
 
 ```swift
 pod 'WeDeploy'

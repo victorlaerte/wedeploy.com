@@ -13,7 +13,7 @@ weight: 5
 
 Now the moment you have been waiting for!
 
-Go to `tutorial-data-android` in your terminal and deploy your project [using the CLI](/docs/intro/using-the-command-line/).
+Go to `data-android-tutorial` in your terminal and deploy your project [using the CLI](/docs/intro/using-the-command-line/).
 
 ```xml
 we deploy -p projectID

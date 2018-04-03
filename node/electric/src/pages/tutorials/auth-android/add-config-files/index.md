@@ -15,7 +15,7 @@ Every service folder must have a `wedeploy.json` file that configures it, so let
 
 ##### Auth
 
-1. Open the `tutorial-auth-android` folder in a code editor.
+1. Open the `auth-android-tutorial` folder in a code editor.
 2. Create a new file named `wedeploy.json` inside the `auth` folder.
 3. In that file, paste this code:
 

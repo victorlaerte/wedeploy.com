@@ -15,7 +15,7 @@ weight: 6
 
 Now we want to add some code that will save data to a collection.
 
-To do this, go to `tutorial-data-ios/app/tutorial-data-ios/ToDoListViewController.swift` and paste this code into the "loadToDos" function:
+To do this, go to `data-ios-tutorial/app/tutorial-data-ios/ToDoListViewController.swift` and paste this code into the "loadToDos" function:
 
 ```swift
 WeDeploy.data("db-<projectID>.wedeploy.io")
@@ -37,7 +37,7 @@ WeDeploy.data("db-<projectID>.wedeploy.io")
 
 Next, we want to add the code that will fetch data from the collection.
 
-To do this, go to `tutorial-data-ios/app/tutorial-data-ios/AddToDoViewController.swift` and paste this cod into the "addToDoClic" function:
+To do this, go to `data-ios-tutorial/app/tutorial-data-ios/AddToDoViewController.swift` and paste this cod into the "addToDoClic" function:
 
 ```swift
 WeDeploy.data("db-<projectID>.wedeploy.io")

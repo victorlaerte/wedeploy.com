@@ -11,7 +11,7 @@ weight: 6
 
 #### Add API Method
 
-Now we want to add a script that will send an email. To do this, go to `tutorial-email-web/ui/main.js` and paste this code:
+Now we want to add a script that will send an email. To do this, go to `email-web-tutorial/ui/main.js` and paste this code:
 
 ```javascript
 WeDeploy

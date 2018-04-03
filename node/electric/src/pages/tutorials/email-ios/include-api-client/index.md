@@ -13,7 +13,7 @@ weight: 4
 
 Before we can make any requests to send an email, we must connect the WeDeploy API Client.
 
-To do this, go to `tutorial-data-ios/app/Podfile` and include this line inside the target function of this file:
+To do this, go to `data-ios-tutorial/app/Podfile` and include this line inside the target function of this file:
 
 ```swift
 pod 'WeDeploy'

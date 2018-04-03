@@ -15,7 +15,7 @@ weight: 6
 
 First, let's add the code that will allow users to create an account.
 
-To do this, go to `tutorial-auth-ios/app/tutorial-auth-ios/SignUpViewController.swift` and paste this code in the "signUpButtonClick" function:
+To do this, go to `auth-ios-tutorial/app/tutorial-auth-ios/SignUpViewController.swift` and paste this code in the "signUpButtonClick" function:
 
 ```swift
 WeDeploy.auth("users-<projectID>.wedeploy.io")
@@ -36,7 +36,7 @@ WeDeploy.auth("users-<projectID>.wedeploy.io")
 
 Next, let's add the code that will allow users to sign-in.
 
-First of all, go to `tutorial-auth-ios/app/tutorial-auth-ios/LoginViewController.swift`, and paste this code in the "loginButtonClick" function:
+First of all, go to `auth-ios-tutorial/app/tutorial-auth-ios/LoginViewController.swift`, and paste this code in the "loginButtonClick" function:
 
 ```swift
 WeDeploy.auth("users-<projectID>.wedeploy.io")

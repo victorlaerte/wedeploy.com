@@ -15,7 +15,7 @@ weight: 3
 
 Every service folder must have a `wedeploy.json` file that configures it, so let's add two files inside the sample project you just downloaded.
 
-1. Open the `tutorial-data-web` folder in a code editor.
+1. Open the `data-web-tutorial` folder in a code editor.
 2. Create a new file inside of the `data` folder and name it `wedeploy.json`.
 3. Inside of that file, paste this code.
 
@@ -40,7 +40,7 @@ Every service folder must have a `wedeploy.json` file that configures it, so let
 
 Along with the wedeploy.json, each Data service must have an `api.json` file to configure your database (eg. set paths, allow certain methods, require authentication).
 
-1. Go back to `tutorial-data-web` in your code editor.
+1. Go back to `data-web-tutorial` in your code editor.
 2. Create another file inside of the `data` folder and name it `api.json`.
 3. Inside of that file, paste this code.
 

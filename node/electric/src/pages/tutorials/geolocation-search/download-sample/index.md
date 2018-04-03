@@ -14,5 +14,5 @@ weight: 2
 First, you'll download a folder that contains the necessary files and directories for your app. You can do this by cloning the repository locally using Git in your terminal.
 
 ```xml
-git clone https://github.com/wedeploy/tutorial-geolocation-search.git
+git clone https://github.com/wedeploy-examples/geolocation-search-tutorial.git
 ```

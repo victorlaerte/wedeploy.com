@@ -13,7 +13,7 @@ weight: 4
 
 Before we can make any requests to send an email, we must connect the WeDeploy API Client.
 
-To do this, go to `tutorial-email-android/app/tutorial-email-android/app/build.gradle` and include this line inside the dependencies function of this file:
+To do this, go to `email-android-tutorial/app/tutorial-email-android/app/build.gradle` and include this line inside the dependencies function of this file:
 
 ```text/x-groovy
 compile 'com.wedeploy:com.wedeploy.android:@site.version.api.android@'

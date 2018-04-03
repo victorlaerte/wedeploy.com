@@ -15,13 +15,13 @@ First, you'll download a folder that contains the necessary files and directorie
 
 ###### A) Download a ZIP
 
-You can [download a ZIP file](https://github.com/wedeploy/tutorial-auth-ios/archive/master.zip).
+You can [download a ZIP file](https://github.com/wedeploy-examples/auth-ios-tutorial/archive/master.zip).
 
 ###### B) Download using Git
 
 Or clone this repository locally.
 
 ```xml
-git clone https://github.com/wedeploy/tutorial-auth-ios.git
+git clone https://github.com/wedeploy-examples/auth-ios-tutorial.git
 ```
 

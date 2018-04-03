@@ -15,7 +15,7 @@ Every service folder must have a `wedeploy.json` file that configures it, so let
 
 ##### Data
 
-1. Open the `tutorial-geolocation-search` folder in a code editor.
+1. Open the `geolocation-search-tutorial` folder in a code editor.
 2. Create a new file named `wedeploy.json` inside the `db` folder.
 3. In that file, paste this code:
 

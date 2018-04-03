@@ -13,7 +13,7 @@ weight: 6
 
 Now the moment you have been waiting for!
 
-Go to `tutorial-geolocation-search` in your terminal and deploy your project [using the CLI](/docs/intro/using-the-command-line/).
+Go to `geolocation-search-tutorial` in your terminal and deploy your project [using the CLI](/docs/intro/using-the-command-line/).
 
 ```xml
 we deploy -p projectID

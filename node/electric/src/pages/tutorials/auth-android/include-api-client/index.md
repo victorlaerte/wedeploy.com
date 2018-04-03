@@ -13,7 +13,7 @@ weight: 4
 
 Before we can make any requests to create or sign-in any users, we must connect the WeDeploy Android API Client.
 
-To do this, go to `tutorial-auth-android/app/tutorial-auth-android/app/build.gradle` and include this line inside the dependencies function of this file:
+To do this, go to `auth-android-tutorial/app/tutorial-auth-android/app/build.gradle` and include this line inside the dependencies function of this file:
 
 ```text/x-groovy
 compile 'com.wedeploy:com.wedeploy.android:@site.version.api.android@'

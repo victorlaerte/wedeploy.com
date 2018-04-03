@@ -11,7 +11,7 @@ weight: 6
 
 #### Add API Method
 
-Now we want to add a script that will send an email. To do this, go to `tutorial-email-ios/app/tutorial-email-ios/EmailViewController.swift` and paste this code into the "submitButtonClick" function:
+Now we want to add a script that will send an email. To do this, go to `email-ios-tutorial/app/tutorial-email-ios/EmailViewController.swift` and paste this code into the "submitButtonClick" function:
 
 ```swift
 let auth = TokenAuth(token: "000-000-000")

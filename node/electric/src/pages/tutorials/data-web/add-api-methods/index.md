@@ -15,7 +15,7 @@ weight: 6
 
 Now we want to add a script that will save data to a collection.
 
-To do this, go to `tutorial-data-web/ui/index.js` and paste this code:
+To do this, go to `data-web-tutorial/ui/index.js` and paste this code:
 
 ```javascript
 WeDeploy

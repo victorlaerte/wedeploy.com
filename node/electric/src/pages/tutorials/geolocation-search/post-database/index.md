@@ -40,7 +40,7 @@ curl -XPOST "https://db-projectID.wedeploy.io/" \
 
 Now you are ready to upload the database to a collection so you can start using it in your application.
 
-1. Go to the `tutorial-geolocation-search` directory in your terminal
+1. Go to the `geolocation-search-tutorial` directory in your terminal
 2. Copy this command into your terminal
 3. Replace the master token and project ID
 4. Run it (it may take a few seconds to complete)!

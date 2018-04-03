@@ -15,5 +15,5 @@ First, you'll download a folder that contains the necessary files to build your 
 Open up a terminal and run this command:
 
 ```xml
-git clone https://github.com/wedeploy/tutorial-workshop.git
+git clone https://github.com/wedeploy-examples/workshop-tutorial.git
 ````

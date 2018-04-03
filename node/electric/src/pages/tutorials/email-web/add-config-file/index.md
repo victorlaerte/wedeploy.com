@@ -13,7 +13,7 @@ weight: 3
 
 Every service folder must have a `wedeploy.json` file that configures it, so let's add two files inside the sample project you just downloaded.
 
-1. Open the `tutorial-email-web` folder in a code editor.
+1. Open the `email-web-tutorial` folder in a code editor.
 2. Create a new file inside of the `email` folder and name it `wedeploy.json`.
 3. Inside of that file, paste this code.
 
