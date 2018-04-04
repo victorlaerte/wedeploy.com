@@ -27,7 +27,6 @@ function submitForm() {
     password: user.password.value
   })
   .then(function() {
-    alert('Account successfully created!');
     signIn();
     user.reset();
   })
@@ -66,6 +65,7 @@ In the same file as above, paste this code between the "current user" comments:
 
 ```javascript
 if (auth.currentUser) {
-    document.querySelector('.username').innerHTML = auth.currentUser.name;
+    document.getElementById('name').placeholder = auth.currentUser.name;
+    document.getElementById('email').placeholder = auth.currentUser.email;
 }
 ```
