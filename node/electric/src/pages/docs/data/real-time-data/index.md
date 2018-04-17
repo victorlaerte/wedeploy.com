@@ -312,6 +312,32 @@ For more examples of useful filters and result sorting you can use, see our **[F
 
 </article>
 
+<article id="7">
+
+## Stop Watching for Data Changes
+
+In some cases, you might need to stop the data watcher. To do that, you should save a reference to the watcher in a variable as shown below.
+
+```javascript
+var watcher = 
+  WeDeploy
+    .data('https://<serviceID>-<projectID>.wedeploy.io')
+    .watch('movies')
+    .on('update', function(data) {
+      console.log("Data updated: " + data);
+    });
+```
+
+Once you have the reference to the watcher, all you have to do is call the `off` method and choose which kind of change you want to stop watching for.
+
+```javascript
+watcher.off('update')
+```
+
+It works in the same way for `create`, `delete` and `fail`.
+
+</article>
+
 ## What's next?
 
 Now that you've learned how to use real-time, you can start [searching data](/docs/data/searching-data/).
