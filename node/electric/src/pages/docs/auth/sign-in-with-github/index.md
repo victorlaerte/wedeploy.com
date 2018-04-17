@@ -56,16 +56,17 @@ auth.signInWithRedirect(provider: provider) { (user, error) in
 </intent-filter>
 
 // On your Activity:
-AuthProvider provider = new AuthProvider.Builder()
+ProviderAuthorization.Builder provider = new ProviderAuthorization.Builder()
   .redirectUri("oauth-wedeploy://[mypackagename]")
-  .provider(Provider.GITHUB)
+  .provider(ProviderAuthorization.Provider.GITHUB)
   .providerScope("user:email")
   .build();
 
 WeDeploy.auth(authUrl)
   .signIn(this, provider);
 
-// Use Auth auth = TokenAuth.getAuthFromIntent(intent); to get the token from the Intent
+// To get the token inside the Activity that you have set the intent-filter:
+Authorization authorization = TokenAuthorization.getAuthorizationFromIntent(getIntent());
 ```
 
 <aside>
