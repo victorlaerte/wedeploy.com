@@ -8,6 +8,10 @@ updates:
   date: Apr 16th, 2018
   description: Remove internal timestamps from logs, as they will be calculated by the platform.
  -
+  version: 2.1.0
+  date: Jan 5th, 2018
+  description: Change email regex to accomdate address-spec
+ -
   version: 2.0.0
   date: Nov 21st, 2017
   description: Provides health checks out of the box.
