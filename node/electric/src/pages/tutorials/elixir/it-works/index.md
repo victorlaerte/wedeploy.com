@@ -16,7 +16,7 @@ Great work, your project is ready to be used!
 Go to `app-<projectID>.wedeploy.io` in your browser.
 
 <figure>
-  <img src="/images/tutorials/it-works.png">
+  <img src="/images/tutorials/it-works-elixir.png">
 </figure>
 
 Awesome! You just deployed a Elixir app within a few minutes! We can't wait to see what else you create with WeDeploy!
