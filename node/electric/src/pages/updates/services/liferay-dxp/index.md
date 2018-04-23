@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: dxp-sp6-20180423
+  date: Apr 23th, 2018
+  description: New licenses batch
+ -
   version: dxp-sp6-20180416
   date: Apr 16th, 2018
   description: Remove timestamps from logs
