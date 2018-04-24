@@ -28,6 +28,7 @@ Here's a list of all the environment variables you can use with this service.
 | - | - |
 | WEDEPLOY_AUTH_EMAIL_CONTENT | HTML code for password reset email |
 | WEDEPLOY_AUTH_EMAIL_SENDER | Set password reset email sender |
+| WEDEPLOY_AUTH_EMAIL_SERVICE_URL | Set the email service id for sending password reset emails |
 | WEDEPLOY_AUTH_EMAIL_SUBJECT | Set password reset email subject |
 | WEDEPLOY_AUTH_FACEBOOK | Enable Facebook Auth integration |
 | WEDEPLOY_AUTH_FACEBOOK_CLIENT_ID | Facebook OAuth ID |
