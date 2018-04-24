@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 2.2.0
+  date: Apr 24th, 2018
+  description: Dynamically detects service ID so you can declare any Auth ID.
+ -
   version: 2.1.0
   date: Apr 16th, 2018
   description: Remove internal timestamps from logs, as they will be calculated by the platform.
