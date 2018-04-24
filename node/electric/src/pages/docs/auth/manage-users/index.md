@@ -363,6 +363,26 @@ curl -X "POST" "https://<serviceID>-<projectID>.wedeploy.io/user/recover" \
 
 </article>
 
+<aside>
+
+###### <span class="icon-16-alert"></span> Attention
+
+To send password reset emails, you must have an [email service](/docs/email/getting-started/) with `email` as the `id` in the same project.
+
+If you don't want to use `email` as service id, you can add this environment variable to your `auth` service: 
+
+```application/json
+{
+  "id": "auth",
+  "image": "wedeploy/auth:@site.version.image.auth@",
+  "env": {
+    "WEDEPLOY_AUTH_EMAIL_SERVICE_URL": "myEmailServiceId"
+  }
+}
+```
+
+</aside>
+
 <article id="8">
 
 ## Sign-out
