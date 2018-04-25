@@ -35,7 +35,18 @@ The easiest way to configure your custom domain, is to add two or more of our We
 
 </aside>
 
+**On the Console**
+
 ![Custom Domains](/images/docs/intro/custom-domains--settings.png)
+
+**In Your wedeploy.json**
+
+```application/json
+{
+  "id": "myServiceId",
+  "customDomains": ["myproject.com", "www.myproject.com"]
+}
+```
 
 <div class="table-container">
 
