@@ -3,7 +3,7 @@
 [![Build Status][cli-img]][cli-url]
 [![Slack Group][irc-img]][irc-url]
 
-This repository hosts the landing and suplementary pages of [WeDeploy.com][wedeploy].
+This repository hosts the landing and supplementary pages of [WeDeploy.com][wedeploy].
 
 WeDeploy is a development platform that helps you deploy your simple to complex
 apps quickly. It also gives you access to intuitive APIs for backend
@@ -44,7 +44,7 @@ The local server will be available at
 
 ---
 
-To work on suplementary pages, including the blog and docs;
+To work on supplementary pages, including the blog and docs;
 
 1. From the [node/electric](node/electric) directory, install the local
    dependencies:

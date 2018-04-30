@@ -140,7 +140,7 @@ curl -X "POST" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
      -H 'Content-Type: application/json' \
      -H 'Authorization: Bearer <your-project-master-token>' \
      -d $'{
-        sort: [
+        "sort": [
           {
             "rating": "desc"
           }
