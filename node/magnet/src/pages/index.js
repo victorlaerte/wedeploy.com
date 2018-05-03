@@ -6,7 +6,7 @@ import {
   highlightAllCodeElementsInDoc,
   highlightCodeSnippetsFromMarkup,
 } from '../utils/highlight.js';
-import {userPlans} from '../utils/state.js';
+import plans from '../utils/plans.js';
 
 import '../components/AuthDemo.js';
 import '../components/Bubbles.js';
@@ -71,9 +71,8 @@ export default class Index extends Component {
 </html>`;
   }
 
-  static async getInitialState(req, res) {
-    const plans = await userPlans(req, res);
-    return {plans};
+  static getInitialState(req, res) {
+    return { plans };
   }
 
   attached() {
