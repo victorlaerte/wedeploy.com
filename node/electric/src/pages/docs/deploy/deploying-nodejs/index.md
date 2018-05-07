@@ -63,6 +63,15 @@ myservice
 └── wedeploy.json
 ```
 
+<aside>
+
+###### <span class="icon-16-alert"></span> Attention
+
+Behind the scenes, we run **npm install --unsafe-perm --production** which means that your application will run in production mode. Because of that, make sure your dependencies are
+on `“dependencies”` instead of `“devDependencies”` inside your `package.json`, otherwise they will not be installed.
+
+</aside>
+
 **Ports**
 
 By default, we expose port `80` on Node.js services. If you want to designate a different port to expose (like `3000`), you must do that in the `wedeploy.json` ([learn more about using ports](/docs/deploy/configuring-deployments/#port)).
