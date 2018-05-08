@@ -4,6 +4,34 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.4.6
+  date: May 8th, 2018
+  description: Added support for using custom timezones (with environment variable TZ). Added support for deploying Git repositories. Fixing missing "error counter". Minor improvements.
+ -
+  version: 1.4.5
+  date: May 4th, 2018
+  description: Added release notes. Added timestamsp to "we log".
+ -
+  version: 1.4.4
+  date: Mar 30th, 2018
+  description: Added "we shell" command.
+ -
+  version: 1.4.2
+  date: Mar 6th, 2018
+  description: Renaming "we env" with "we env-var". Stop allowing dashes on service ids. Minor improvements.
+ -
+  version: 1.4.1
+  date: Mar 6th, 2018
+  description: Minor improvements.
+ -
+  version: 1.4.0
+  date: Mar 6th, 2018
+  description: Making "we scale" work with no required arguments. Minor improvements.
+ -
+  version: 1.3.5
+  date: Feb 22nd, 2018
+  description: Fixing issue where nested services would be identified as services for the CLI. Fix skipping directories that have any files on the .gitignore list (instead of only the file itself). Minor improvements.
+ -
   version: 1.3.4
   date: Jan 15th, 2018
   description: Fixed issue where deployment might never seem to terminate on CLI due to metadata type mismatch. Minor improvements.
@@ -30,7 +58,7 @@ updates:
  -
   version: 1.2.8
   date: Jan 5th, 2018
-  description: Adding protection to avoid deploying content in sensitive directories such as the home directory. Minor improvements.
+  description: Added protection to avoid deploying content in sensitive directories such as the home directory. Minor improvements.
  -
   version: 1.2.7
   date: Jan 2nd, 2018
