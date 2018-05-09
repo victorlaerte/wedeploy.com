@@ -6,19 +6,19 @@ updates:
  -
   version: 1.4.6
   date: May 8th, 2018
-  description: Added support for using custom timezones (with environment variable TZ). Added support for deploying Git repositories. Fixing missing "error counter". Minor improvements.
+  description: Added support for using custom timezones (with environment variable TZ). Added support for deploying Git repositories. Fixing missing 'error counter'. Minor improvements.
  -
   version: 1.4.5
   date: May 4th, 2018
-  description: Added release notes. Added timestamsp to "we log".
+  description: Added release notes. Added timestamsp to 'we log'.
  -
   version: 1.4.4
   date: Mar 30th, 2018
-  description: Added "we shell" command.
+  description: Added 'we shell' command.
  -
   version: 1.4.2
   date: Mar 6th, 2018
-  description: Renaming "we env" with "we env-var". Stop allowing dashes on service ids. Minor improvements.
+  description: Renaming 'we env' with 'we env-var'. Stop allowing dashes on service ids. Minor improvements.
  -
   version: 1.4.1
   date: Mar 6th, 2018
@@ -26,7 +26,7 @@ updates:
  -
   version: 1.4.0
   date: Mar 6th, 2018
-  description: Making "we scale" work with no required arguments. Minor improvements.
+  description: Making 'we scale' work with no required arguments. Minor improvements.
  -
   version: 1.3.5
   date: Feb 22nd, 2018
