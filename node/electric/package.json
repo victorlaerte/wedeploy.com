@@ -7,14 +7,14 @@
     "dev": "electric run"
   },
   "dependencies": {
-    "marble-topbar": "^1.4.0",
+    "electric-marble-components": "^4.0.1",
+    "marble": "^3.4.5",
+    "marble-topbar": "^1.6.2",
+    "metal-toast": "^2.0.0",
+    "metal-toggler": "^3.1.0",
     "moment": "2.0.0"
   },
   "devDependencies": {
-    "electric-cli": "^3.0.1",
-    "electric-marble-components": "^4.0.1",
-    "marble": "^3.4.4",
-    "metal-toast": "^2.0.0",
-    "metal-toggler": "^3.1.0"
+    "electric-cli": "^3.0.1"
   }
 }
