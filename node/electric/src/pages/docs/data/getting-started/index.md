@@ -25,7 +25,7 @@ Our Data service enables you to store data securely to a cloud database, make co
 Want to see the process of deploying WeDeploy Data step by step?
 
 <div class="guide-btn-cta">
-  <a class="btn btn-accent btn-sm" href="/tutorials/data-web/" target="_blank">
+  <a class="btn btn-accent btn-lg" href="/tutorials/data-web/" target="_blank">
     <span class="icon-16-external"></span>Try the tutorial
   </a>
 </div>

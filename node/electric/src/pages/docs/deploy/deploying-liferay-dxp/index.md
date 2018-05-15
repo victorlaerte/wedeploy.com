@@ -27,7 +27,7 @@ We give you a free 15 day trial period to test and develop your DXP instance.
 Want to see the process of deploying Liferay DXP Trial step by step?
 
 <div class="guide-btn-cta">
-  <a class="btn btn-accent btn-sm" href="/tutorials/liferay-dxp/" target="_blank">
+  <a class="btn btn-accent btn-lg" href="/tutorials/liferay-dxp/" target="_blank">
     <span class="icon-16-external"></span>Try the tutorial
   </a>
 </div>

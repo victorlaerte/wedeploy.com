@@ -25,7 +25,7 @@ weight: 4
 Want to see the process of deploying Node.js step by step?
 
 <div class="guide-btn-cta">
-  <a class="btn btn-accent btn-sm" href="/tutorials/nodejs/" target="_blank">
+  <a class="btn btn-accent btn-lg" href="/tutorials/nodejs/" target="_blank">
     <span class="icon-16-external"></span>Try the tutorial
   </a>
 </div>

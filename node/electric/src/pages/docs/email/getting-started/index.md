@@ -25,7 +25,7 @@ Our Email service enables you to send customized emails to your users and check 
 Want to see the process of deploying WeDeploy Email step by step?
 
 <div class="guide-btn-cta">
-  <a class="btn btn-accent btn-sm" href="/tutorials/email-web/" target="_blank">
+  <a class="btn btn-accent btn-lg" href="/tutorials/email-web/" target="_blank">
     <span class="icon-16-external"></span>Try the tutorial
   </a>
 </div>
