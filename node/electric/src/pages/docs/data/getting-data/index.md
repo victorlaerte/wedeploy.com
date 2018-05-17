@@ -136,16 +136,14 @@ WeDeploy
   .execute();
 ```
 ```text/x-sh
-curl -X "POST" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
-     -H 'Content-Type: application/json' \
+curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
      -H 'Authorization: Bearer <your-project-master-token>' \
-     -d $'{
-        "sort": [
-          {
-            "rating": "desc"
-          }
-        ]
-      }'
+     --get \
+     --data-urlencode $'sort=[
+        {
+          "rating": "desc"
+        }
+      ]'
 ```
 
 The result would be the following list if documents sorted by rating.
@@ -194,29 +192,27 @@ WeDeploy
   .execute();
 ```
 ```text/x-sh
-curl -X "POST" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
-     -H 'Content-Type: application/json' \
+curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
      -H 'Authorization: Bearer <your-project-master-token>' \
-     -d $'{
-        "filter": [
-          {
-            "or": [
-              {
-                "year": {
-                  "value": 2000,
-                  "operator": "<"
-                }
-              },
-              {
-                "rating": {
-                  "value": 8.5,
-                  "operator": ">"
-                }
+     --get \
+     --data-urlencode $'filter=[
+        {
+          "or": [
+            {
+              "year": {
+                "value": 2000,
+                "operator": "<"
               }
-            ]
-          }
-        ]
-      }'
+            },
+            {
+              "rating": {
+                "value": 8.5,
+                "operator": ">"
+              }
+            }
+          ]
+        }
+      ]'
 ```
 
 The result will be any documents from that collection that match these filter parameters.

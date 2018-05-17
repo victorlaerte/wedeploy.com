@@ -50,22 +50,20 @@ WeDeploy
   .execute();
 ```
 ```text/x-sh
-curl -X "POST" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
-     -H 'Content-Type: application/json' \
+curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
      -H 'Authorization: Bearer <your-project-master-token>' \
-     -d $'{
-        "filter": [
-          {
-            "title": {
-              "value": {
-                "query": "The attack an awaken Jedi uses to strike a Sith is pure force!"
-              },
-              "operator": "similar"
-            }
+     --get \
+     --data-urlencode 'type=search' \
+     --data-urlencode $'filter=[
+        {
+          "title": {
+            "value": {
+              "query": "The attack an awaken Jedi uses to strike a Sith is pure force!"
+            },
+            "operator": "similar"
           }
-        ],
-        "type": "search"
-      }'
+        }
+      ]'
 ```
 
 We receive not only the documents that match the filter, but also search metadata like the match score of each document:
