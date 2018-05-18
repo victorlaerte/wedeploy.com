@@ -4,6 +4,18 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 2.3.0
+  date: May 17th, 2018
+  description: Securing communications with shared data servers.
+ -
+  version: 2.2.2
+  date: May 4th, 2018
+  description: Fixing problems with Redis authentication.
+ -
+  version: 2.2.1
+  date: Apr 30th, 2018
+  description: Update dependencies
+ -
   version: 2.2.0
   date: Apr 24th, 2018
   description: Dynamically detects service ID so you can declare any Auth ID.
