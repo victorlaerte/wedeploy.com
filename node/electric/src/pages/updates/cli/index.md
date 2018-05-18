@@ -4,6 +4,14 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.4.8
+  date: May 18th, 2018
+  description: Added support for piping username and password for 'we login'. Minor improvements.
+ -
+  version: 1.4.7
+  date: May 13th, 2018
+  description: Improved user experience when running 'we deploy'. Minor improvements.
+ -
   version: 1.4.6
   date: May 8th, 2018
   description: Added support for using custom timezones (with environment variable TZ). Added support for deploying Git repositories. Fixing missing 'error counter'. Minor improvements.
