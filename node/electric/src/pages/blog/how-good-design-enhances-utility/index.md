@@ -3,7 +3,7 @@ title: "How Good Design Enhances Utility"
 description: "When building a great product, it inevitably becomes more and more important to consider design. Is the design pleasing? Is it clear? Does it inspire? And, most importantly, is the design of the product coherent with its purpose?"
 date: "March 22, 2018"
 author: "Jared Gorski"
-image: "/images/blog/post-23--0.jpg"
+image: "images/blog/post-23--0.jpg"
 layout: "blog"
 ---
 

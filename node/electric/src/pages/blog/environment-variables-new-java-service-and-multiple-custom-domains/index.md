@@ -3,7 +3,7 @@ title: "Environment variables, new Java service, and multiple custom domains!"
 description: "We shipped some really interesting features recently and we would love to share them with you!"
 date: "Oct 31, 2016"
 author: "Eduardo Lundgren"
-image: "/images/blog/post-2--2.png"
+image: "images/blog/post-2--2.png"
 layout: "blog"
 ---
 

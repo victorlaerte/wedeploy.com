@@ -3,7 +3,7 @@ title: "Investing In The Team Is Investing In The Product"
 description: "There are many ways to improve your products, but investing in the strength and morale of our team has been a very important approach for us. This article is an attempt to share why we are passionate about the people more than the software and why that is helping us build even better products."
 date: "February 9, 2018"
 author: "Jonni Lundy"
-image: "/images/blog/post-20--0.jpg"
+image: "images/blog/post-20--0.jpg"
 layout: "blog"
 ---
 

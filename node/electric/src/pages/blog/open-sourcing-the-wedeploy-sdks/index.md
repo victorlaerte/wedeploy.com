@@ -3,7 +3,7 @@ title: "Open Sourcing the WeDeploy SDKs"
 description: "We are proud to announce that three of WeDeploy's libraries are now Open Source software!"
 date: "October 25, 2017"
 author: "Iliyan Peychev"
-image: "/images/blog/post-17--0.jpg"
+image: "images/blog/post-17--0.jpg"
 layout: "blog"
 ---
 

@@ -3,7 +3,7 @@ title: "Starting an IoT platform with WeDeploy"
 description: "In this blog post I will guide you through the steps to create a minimal IoT platform which accepts metrics from remote devices. To build this multi-service project, I will use the WeDeploy Java, Hosting, and Data services."
 date: "Mar 17, 2017"
 author: "Manuel de la Peña"
-image: "/images/blog/post-6--0.png"
+image: "images/blog/post-6--0.jpg"
 layout: "blog"
 directory: "email-js"
 ---

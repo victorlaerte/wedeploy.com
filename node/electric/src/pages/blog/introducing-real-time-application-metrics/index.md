@@ -3,7 +3,7 @@ title: "Introducing Real-Time Application Metrics"
 description: "Seamless, rapid deployments to the cloud are great, but what about after you deploy? What happens when you want to see how your application performs during traffic spikes or heavy usage?"
 date: "September 12, 2017"
 author: "Eduardo Lundgren"
-image: "http://wedeploy.com/images/blog/post-14--0.gif"
+image: "images/blog/post-14--0.gif"
 layout: "blog"
 ---
 

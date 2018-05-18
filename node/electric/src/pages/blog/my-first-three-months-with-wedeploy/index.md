@@ -3,7 +3,7 @@ title: "My First Three Months With WeDeploy"
 description: "Hey! My name is Jonni and I'm a UI intern on the WeDeploy team. I joined back in November and wanted to share a couple things from my first three months at Liferay."
 date: "Jan 13, 2017"
 author: "Jonni Lundy"
-image: "/images/blog/post-4--0.png"
+image: "images/blog/post-4--0.png"
 layout: "blog"
 ---
 

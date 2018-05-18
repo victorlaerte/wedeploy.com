@@ -3,7 +3,7 @@ title: "Happy New Year from WeDeploy"
 description: "It’s officially 2017! Are you as excited as we are?"
 date: "Jan 03, 2017"
 author: "Zeno Rocha"
-image: "/images/blog/post-3--0.png"
+image: "images/blog/post-3--0.png"
 layout: "blog"
 ---
 

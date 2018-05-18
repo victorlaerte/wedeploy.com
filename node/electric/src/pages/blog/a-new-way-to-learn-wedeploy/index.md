@@ -3,7 +3,7 @@ title: "A New Way To Learn WeDeploy"
 description: "From the beginning, we knew that great documentation was crucial to successfully sharing WeDeploy with the world."
 date: "April 19, 2017"
 author: "Jonni Lundy"
-image: "/images/blog/post-8--0.png"
+image: "images/blog/post-8--0.png"
 layout: "blog"
 ---
 

@@ -3,7 +3,7 @@ title: "Using WeDeploy With React Native and React VR"
 description: "Throughout the development of WeDeploy, it has been our goal to support as many platforms and environments as possible."
 date: "April 25, 2017"
 author: "Iliyan Peychev"
-image: "/images/blog/post-9--0.png"
+image: "images/blog/post-9--0.png"
 layout: "blog"
 ---
 

@@ -3,7 +3,7 @@ title: "How WeDeploy Estimates Tasks?"
 description: "Last year we started to notice how we were missing our release estimates on WeDeploy. We would start a new feature and say: 'Oh, this is going to take only one month to release', but in reality it would take three. This year we decide to change that and now we're seeing some substantial improvements."
 date: "May 3, 2018"
 author: "Zeno Rocha"
-image: "/images/blog/post-29--0.png"
+image: "images/blog/post-29--0.png"
 layout: "blog"
 ---
 

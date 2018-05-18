@@ -3,7 +3,7 @@ title: "Introducing WeDeploy Shell"
 description: "We are happy to announce a big improvement to our Console - now all the services you deploy have shell support out of the box. This is an exciting move forward and we can't wait to see what kind of opportunities this opens for our users to keep building amazing apps."
 date: "March 25, 2018"
 author: "Ivan Santos"
-image: "/images/blog/post-25--0.gif"
+image: "images/blog/post-25--0.gif"
 layout: "blog"
 ---
 

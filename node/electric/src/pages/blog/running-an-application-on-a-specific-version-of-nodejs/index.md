@@ -3,7 +3,7 @@ title: "Running an application on a specific version of Node.js"
 description: "In case you are building a Node.js application and want to host it on WeDeploy, we have good news for you - now you can specify a designated version of Node.js."
 date: "October 18, 2017"
 author: "Iliyan Peychev"
-image: "/images/blog/post-16--0.gif"
+image: "images/blog/post-16--0.gif"
 layout: "blog"
 ---
 

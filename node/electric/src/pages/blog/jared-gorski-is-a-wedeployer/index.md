@@ -3,7 +3,7 @@ title: "Jared Gorski is a WeDeployer"
 description: "We are starting the new year out right by bringing on a new team member as part of our Developer Relations internship program."
 date: "March 9, 2018"
 author: "Jonni Lundy"
-image: "/images/blog/post-21--0.jpg"
+image: "images/blog/post-21--0.jpg"
 layout: "blog"
 ---
 

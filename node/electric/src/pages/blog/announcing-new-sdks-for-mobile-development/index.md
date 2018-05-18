@@ -3,7 +3,7 @@ title: "Announcing new SDKs for Mobile Development"
 description: "Are you an Android or iOS developer? Do you need to deploy services quickly and easily to the cloud and focus on your mobile apps? Well today is a big day for you!"
 date: "May 26, 2017"
 author: "Jose M. Navarro"
-image: "/images/blog/post-11--0.png"
+image: "images/blog/post-11--0.png"
 layout: "blog"
 ---
 

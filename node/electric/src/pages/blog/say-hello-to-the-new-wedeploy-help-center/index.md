@@ -3,7 +3,7 @@ title: "Say hello to the new WeDeploy Help Center"
 description: "We always love providing personal, tailored support to our users through that green button at the bottom of our pages. But we realize that sometimes you don't want to wait for an answer to your question."
 date: "September 11, 2017"
 author: "Zeno Rocha"
-image: "http://wedeploy.com/images/blog/post-13--help-center.gif"
+image: "images/blog/post-13--help-center.gif"
 layout: "blog"
 ---
 
