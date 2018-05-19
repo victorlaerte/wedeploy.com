@@ -14,6 +14,7 @@ import '../components/DataDemo.js';
 import '../components/Header.js'
 import '../components/PlugNPlay.js';
 import '../components/Start.js';
+import '../components/Footer.js';
 
 import '../partials/Answers.soy.js';
 import '../partials/Auth.soy.js';
@@ -21,7 +22,6 @@ import '../partials/Benefits.soy.js';
 import '../partials/Data.soy.js';
 import '../partials/Email.soy.js';
 import '../partials/Enterprise.soy.js';
-import '../partials/Footer.js';
 import '../partials/Possibilities.soy.js';
 import '../partials/Highlights.soy.js';
 import '../partials/Hosting.soy.js';
