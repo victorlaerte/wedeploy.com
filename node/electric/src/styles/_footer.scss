@@ -1,0 +1,11 @@
+.footer {
+  font: 15px/24px "Circular Std";
+}
+
+.footer-icon.-twitter::before {
+  content: url("../images/footer/footer-icon-twitter.svg");
+}
+
+.footer-icon.-github::before {
+  content: url("../images/footer/footer-icon-github.svg");
+}
