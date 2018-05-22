@@ -915,7 +915,7 @@ Above we are getting a maximum of 2 documents in the movies collection where the
 
 <h5 id="offset">offset</h5>
 
-You can choose how man results to skip in order to provide pagination.
+You can choose how many results to skip in order to provide pagination.
 
 ```javascript
 WeDeploy
