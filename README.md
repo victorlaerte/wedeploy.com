@@ -68,6 +68,26 @@ To work on supplementary pages, including the blog and docs;
 The local server will be available at
 [http://localhost:8888](http://localhost:8888).
 
+---
+
+To work on both them together:
+
+1. Install [Docker](https://www.docker.com/get-docker).
+2. Build image locally:
+
+   ```sh
+   docker build -t wedeploy/wedeploy.com node
+   ```
+   
+3. Run image locally:
+
+   ```sh
+   docker run -p 3001:3001 wedeploy/wedeploy.com
+   ```
+
+The local server will be available at
+[http://localhost:3001](http://localhost:3001).
+
 [wedeploy]: https://wedeploy.com/
 [cli-url]: https://ci.wedeploy.com/job/wedeploy/job/wedeploy.com/job/master/
 [cli-img]: https://ci.wedeploy.com/buildStatus/icon?job=wedeploy/wedeploy.com/master
