@@ -3,7 +3,7 @@ title: "JavaScript SDK"
 description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
--
+ -
   version: 4.3.0
   date: May 22nd, 2018
   description: Updated third party dependencies to prevent potential security vulnerabilities.
