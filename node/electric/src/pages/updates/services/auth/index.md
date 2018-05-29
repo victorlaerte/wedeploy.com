@@ -4,6 +4,18 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 2.6.0
+  date: May 24th, 2018
+  description: Expose fields for filtering search results.
+ -
+  version: 2.5.0
+  date: May 24th, 2018
+  description: Tune up size in aggregation operators.
+ -
+  version: 2.4.0
+  date: May 23th, 2018
+  description: Update indexes configuration.
+ -
   version: 2.3.0
   date: May 17th, 2018
   description: Securing communications with shared data servers.
