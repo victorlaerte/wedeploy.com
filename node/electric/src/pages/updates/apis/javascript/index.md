@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 4.4.0
+  date: May 25th, 2018
+  description: Added a new method `fields` to Data to fetch only specified fields from a document.
+ -
   version: 4.3.0
   date: May 22nd, 2018
   description: Updated third party dependencies to prevent potential security vulnerabilities.
