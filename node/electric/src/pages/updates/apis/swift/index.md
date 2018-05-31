@@ -8,6 +8,10 @@ updates:
   date: May 26th, 2018
   description: Added a new method `fields` to Data to fetch only specified fields from a document.
  -
+  version: 1.0.1
+  date: Oct 30th, 2017
+  description: Update library to Swift 4 and change releasing process to not use binaries.
+ -
   version: 1.0.0
   date: Oct 4th, 2017
   description: Adds `createCollection` and `updateCollection` methods in WeDeployData that allow you to create and update collections in your data service.
