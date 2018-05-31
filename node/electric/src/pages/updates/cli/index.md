@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.4.9
+  date: May 30th, 2018
+  description: Fixing panic when using 'we deploy --quiet'. Fixing 'we login' when using Git bash for Windows.
+ -
   version: 1.4.8
   date: May 18th, 2018
   description: Added support for piping username and password for 'we login'. Minor improvements.
