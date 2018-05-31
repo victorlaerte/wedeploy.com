@@ -38,16 +38,16 @@ We have a list of supported attributes to help you configure your database.
 
 | Field | Type | Description |
 | - | - | - |
-| path | string | The path that represents the collection used to handle the request data. |
-| data | boolean | Tells the service if the request to a collection should be stored or not. |
-| description | string | Used to describe the behavior of an endpoint. |
-| auth | object | Used to define authentication rules for the endpoint. |
-| method | array | HTTP method allowed for the request. |
-| parameters | object | Parameters and validation rules for the collection. |
+| **[path](#path)** | string | The path that represents the collection used to handle the request data. |
+| **[data](#data)** | boolean | Tells the service if the request to a collection should be stored or not. |
+| **[description](#description)** | string | Used to describe the behavior of an endpoint. |
+| **[auth](#auth)** | object | Used to define authentication rules for the endpoint. |
+| **[method](#method)** | array | HTTP method allowed for the request. |
+| **[parameters](#parameters)** | object | Parameters and validation rules for the collection. |
 
 </div>
 
-##### path
+<h4 id="path">path</h4>
 
 A path represents the resource used to store your project data.
 
@@ -62,7 +62,7 @@ A path represents the resource used to store your project data.
 ]
 ```
 
-##### data
+<h4 id="data">data</h4>
 
 You can create endpoints just for validation or to actually store the request in the collection. If set to `true` it will store the request.
 
@@ -75,7 +75,7 @@ You can create endpoints just for validation or to actually store the request in
 ]
 ```
 
-##### description
+<h4 id="description">description</h4>
 
 The `description` is a simple way to keep your endpoints organized by describing their behavior and role.
 
@@ -89,7 +89,7 @@ The `description` is a simple way to keep your endpoints organized by describing
 ]
 ```
 
-##### auth
+<h4 id="auth">auth</h4>
 
 You can prevent unauthorized applications and users from accessing certain endpoints by using the `auth` field. A common use is to verify if the application requesting the endpoint is authenticated before it completes the request.
 
@@ -104,7 +104,7 @@ You can prevent unauthorized applications and users from accessing certain endpo
 ]
 ```
 
-##### method
+<h4 id="method">method</h4>
 
 The `method` specifies the HTTP method used for the request. In the example bellow, it allows a GET request and if you try to do a PUT or DELETE the route will not be recognized and will fail. This is very useful for adding different types of validation for different request methods.
 
@@ -126,7 +126,7 @@ Available methods include:
 - `PUT`
 - `DELETE`
 
-##### parameters
+<h4 id="parameters">parameters</h4>
 
 You generally would use `parameters` to force validation in order to make sure that the params sent to a collection follow predefined rules.
 
