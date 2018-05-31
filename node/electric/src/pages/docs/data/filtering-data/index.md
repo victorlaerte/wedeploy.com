@@ -63,6 +63,7 @@ The `.get`, `.watch`, and `.search` data methods can use these filters.
 | **[.aggregate](#aggregate)** | Generates query statistics |
 | **[.count](#count)** | Counts number of resulting documents from query |
 | **[.orderBy](#orderBy)** | Sorts query results by field |
+| **[.fields](#fields)** | Select which fields should be retrieved |
 
 </article>
 
@@ -1163,6 +1164,30 @@ curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
           }
         }
       ]'
+```
+
+<h5 id="fields">fields</h5>
+Sometimes you don't need all fields from a document, in these cases you can use the `fields` method to get only the fields that you want.
+
+```javascript
+WeDeploy
+  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .fields(['title', 'ratings'])
+  .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .fields("title", "ratings")
+  .get(resourcePath: "movies")
+```
+```text/x-sh
+curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
+     -H 'Authorization: Bearer <your-project-master-token>' \
+    --get --data-urlencode $'fields[
+      "title",
+      "ratings"
+    ]'
 ```
 
 Above we are finding all the movies that have ratings above 8.5 and sorting them by their title in descending order.
