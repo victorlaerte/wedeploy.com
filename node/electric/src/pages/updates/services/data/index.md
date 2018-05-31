@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 2.7.0
+  date: May 30th, 2018
+  description: Enabled encryption for communicating with our services.
+ -
   version: 2.6.0
   date: May 24th, 2018
   description: Expose fields for filtering search results.
