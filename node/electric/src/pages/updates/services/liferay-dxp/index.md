@@ -7,7 +7,7 @@ updates:
   version: dxp-sp6-20180530
   date: May 30th, 2018
   description: Reduce image size removing unused files
-  -
+ -
   version: dxp-sp6-20180522
   date: May 22th, 2018
   description: New licenses batch
