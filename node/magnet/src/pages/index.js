@@ -39,7 +39,7 @@ export const route = {
 };
 
 export default class Index extends Component {
-  static renderLayout(req, content) {
+  static renderLayout(req, content, initialState) {
     return `<!doctype html>
 <html lang="en" dir="ltr">
   <head>
@@ -67,17 +67,38 @@ export default class Index extends Component {
   </head>
   <body>
     ${highlightCodeSnippetsFromMarkup(content)}
+    ${getSentryScripts(initialState)}
   </body>
 </html>`;
   }
 
   static getInitialState(req, res) {
-    return { plans };
+    const nodeEnv = process.env.NODE_ENV;
+    const sentryPublicUrl = process.env.WEDEPLOY_SENTRY_DSN_LANDING_PUBLIC;
+    return { plans, nodeEnv, sentryPublicUrl };
   }
 
   attached() {
     highlightAllCodeElementsInDoc();
   }
+}
+
+/**
+ * Loads sentry scripts.
+ * @param {Object} initialState
+ * @return {string}
+ */
+function getSentryScripts(initialState) {
+  switch (initialState.nodeEnv) {
+    case 'development':
+    return '';
+  }
+  return `
+      <script src="https://cdn.ravenjs.com/3.24.1/raven.min.js" crossorigin="anonymous"></script>
+      <script>
+        Raven.config('${initialState.sentryPublicUrl}').install()
+      </script>
+      `
 }
 
 Soy.register(Index, templates);

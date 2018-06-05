@@ -3,6 +3,7 @@ module.exports = {
     dev: false,
     port: 3001,
     plugins: ['function', 'controller', 'metal'],
+    src: ['src/**/*.js', 'raven.js'],
     pluginsConfig: {
       metal: {
         src: ['src/**/*.js'],
