@@ -8,6 +8,8 @@ module.exports = {
             siteData.index.url = 'https://wedeploy.com/'
         }
 
+        siteData.env = process.env.NODE_ENV;
+
         return siteData;
     },
     metalComponents: ['electric-marble-components', 'marble-topbar'],

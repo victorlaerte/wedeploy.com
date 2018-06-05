@@ -47,7 +47,7 @@ ADD ./electric/package.json $WEDEPLOY_ELECTRIC_DIRECTORY
 ADD ./electric/package-lock.json $WEDEPLOY_ELECTRIC_DIRECTORY
 RUN npm install
 ADD ./electric $WEDEPLOY_ELECTRIC_DIRECTORY
-RUN npm run build
+RUN npm run build-prod
 RUN mv $WEDEPLOY_ELECTRIC_DIRECTORY/dist $WEDEPLOY_MAGNET_DIRECTORY/electric
 
 # Run Magnet

@@ -63,6 +63,13 @@
 
     <script src="https://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
 
+    {if $site.env == 'production'}
+      <script src="https://cdn.ravenjs.com/3.24.1/raven.min.js" crossorigin="anonymous"></script>
+      <script>
+        Raven.config('{$site.sentryPublicUrl}').install()
+      </script>
+    {/if}
+
     <script>{literal}
       window.intercomSettings = {
         app_id: "ocvh9014"
