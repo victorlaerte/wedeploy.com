@@ -13,7 +13,7 @@ weight: 3
 
 Every service folder must have a `wedeploy.json` file that configures it, so let's add one file inside the sample project you just downloaded.
 
-1. Open the `java` folder in a code editor
+1. Open the `java-tutorial` folder in a code editor
 2. Create a new file named `wedeploy.json`.
 3. In that file, paste this code:
 
