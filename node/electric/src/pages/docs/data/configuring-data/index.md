@@ -149,13 +149,11 @@ You generally would use `parameters` to force validation in order to make sure t
 
 Available parameter types include:
 
-- Boolean
-- Double
-- Float
-- Integer
-- Long
-- NestedDocument
-- String
+- boolean
+- number
+- string
+- array
+- object
 
 </article>
 
