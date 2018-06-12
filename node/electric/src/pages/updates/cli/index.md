@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.4.10
+  date: June 12th, 2018
+  description: Fix 'we deploy' for Windows users whose usernames contains spaces. Minor improvements.
+ -
   version: 1.4.9
   date: May 30th, 2018
   description: Fixing panic when using 'we deploy --quiet'. Fixing 'we login' when using Git bash for Windows.
