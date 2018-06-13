@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.5.0
+  date: June 13th, 2018
+  description: Added the --skip-progress flag to 'we deploy' and changed --quiet behavior to make it wait until deployment is finished.
+ -
   version: 1.4.10
   date: June 12th, 2018
   description: Fix 'we deploy' for Windows users whose usernames contains spaces. Minor improvements.
