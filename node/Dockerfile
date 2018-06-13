@@ -37,7 +37,7 @@ WORKDIR $WEDEPLOY_MAGNET_DIRECTORY
 
 ADD ./magnet/package.json $WEDEPLOY_MAGNET_DIRECTORY
 ADD ./magnet/package-lock.json $WEDEPLOY_MAGNET_DIRECTORY
-RUN npm install
+RUN npm install --no-audit
 ADD ./magnet $WEDEPLOY_MAGNET_DIRECTORY
 
 # Install and run Electric
@@ -45,7 +45,7 @@ WORKDIR $WEDEPLOY_ELECTRIC_DIRECTORY
 
 ADD ./electric/package.json $WEDEPLOY_ELECTRIC_DIRECTORY
 ADD ./electric/package-lock.json $WEDEPLOY_ELECTRIC_DIRECTORY
-RUN npm install
+RUN npm install --no-audit
 ADD ./electric $WEDEPLOY_ELECTRIC_DIRECTORY
 RUN npm run build-prod
 RUN mv $WEDEPLOY_ELECTRIC_DIRECTORY/dist $WEDEPLOY_MAGNET_DIRECTORY/electric
