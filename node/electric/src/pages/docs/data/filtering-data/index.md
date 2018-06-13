@@ -50,7 +50,7 @@ The `.get`, `.watch`, and `.search` data methods can use these filters.
 
 | Filter | Description |
 | - | - |
-| **[.boundBox](#boundBox)** | Matches within rectangle geo zone |
+| **[.boundingBox](#boundingBox)** | Matches within rectangle geo zone |
 | **[.distance](#distance)** | Matches within distance of specific location |
 
 ##### Results
@@ -768,14 +768,14 @@ Geo.point(20, 40)
 
 </aside>
 
-<h5 id="boundBox">boundBox</h5>
+<h5 id="boundingBox">boundingBox</h5>
 
 You can filter for results within a specific geo box.
 
 ```javascript
 WeDeploy
   .data('https://<serviceID>-<projectID>.wedeploy.io')
-  .boundBox('location', '20,0', '0,20')
+  .boundingBox('location', '20,0', '0,20')
   .get('movies')
 ```
 ```swift
