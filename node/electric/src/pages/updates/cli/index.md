@@ -4,6 +4,14 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.5.2
+  date: June 15th, 2018
+  description: Print friendly status text errors on API errors.
+ -
+  version: 1.5.1
+  date: June 15th, 2018
+  description: Improved output colors for requests when using --verbose. Minor improvements.
+ -
   version: 1.5.0
   date: June 13th, 2018
   description: Added the --skip-progress flag to 'we deploy' and changed --quiet behavior to make it wait until deployment is finished.
