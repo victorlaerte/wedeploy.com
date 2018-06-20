@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.5.5
+  date: June 20th, 2018
+  description: Show current number of deployed instances on 'we scale' and ask for service before prompting for number of instances on change.
+ -
   version: 1.5.4
   date: June 19th, 2018
   description: Improving error messages. Minor improvements.
