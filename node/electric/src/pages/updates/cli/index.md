@@ -4,6 +4,14 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.5.4
+  date: June 19th, 2018
+  description: Improving error messages. Minor improvements.
+ -
+  version: 1.5.3
+  date: June 19th, 2018
+  description: Minor improvements.
+ -
   version: 1.5.2
   date: June 15th, 2018
   description: Print friendly status text errors on API errors.
