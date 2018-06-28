@@ -10,9 +10,9 @@
       "javascript": "4.5.0"
     },
     "image": {
-      "auth": "2.7.0",
+      "auth": "2.8.0",
       "data": "2.8.0",
-      "email": "2.7.0",
+      "email": "2.8.0",
       "hosting": "2.0.0",
       "liferay": "dxp-sp6-20180530"
     }
