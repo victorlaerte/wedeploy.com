@@ -45,6 +45,7 @@ The `.get`, `.watch`, and `.search` data methods can use these filters.
 | **[.phrase](#phrase)** | Matches of exact query string sequence |
 | **[.prefix](#prefix)** | Matches that begin with same value |
 | **[.similar](#similar)** | Matches documents like this query |
+| **[.wildcard](#wildcard)** | Matches documents with the given pattern |
 
 ##### Geolocation
 
@@ -515,8 +516,6 @@ Above we are getting all documents in the movies collection where there is any v
 
 For all text query examples, lets assume we are using a collection of Star Wars movies as the sample data.
 
-Text queries ignore upper or lower case letters.
-
 <h5 id="match">match</h5>
 
 You can filter for content that matches any part of your query. This would allow us to search for "The Revenge of the Sith" by simply querying something like "Sith's revenge".
@@ -716,6 +715,45 @@ curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
 ```
 
 Above we are getting all documents in the movies collection where the title contains similar content to "sth".
+
+<h5 id="wildcard">wildcard</h5>
+
+The `wildcard` method allows you to retrieve documents based in a given pattern. It receives a `field` and a `value` as parameter. For example, suppose you want to retrieve all movies whose title contains the substring `sth`. You can do this by giving the field name and `*sth*` as value. Take a look at the example shown below.
+
+```javascript
+WeDeploy
+  .data('https://<serviceID>-<projectID>.wedeploy.io')
+  .wildcard('title', '*sth*')
+  .get('movies')
+```
+```swift
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .wildcard(field: "title", value: "*sth*")
+  .get(resourcePath: "movies")
+```
+```text/x-java
+WeDeploy
+  .data("https://<serviceID>-<projectID>.wedeploy.io")
+  .wildcard("title", "*sth*")
+  .get("movies")
+  .execute();
+```
+```text/x-sh
+curl -X "GET" "https://<serviceID>-<projectID>.wedeploy.io/movies" \
+     -H 'Authorization: Bearer <your-project-master-token>' \
+     --get \
+     --data-urlencode $'filter=[
+        {
+          "title": {
+            "value": "*sth*"
+            "operator": "wildcard"
+          }
+        }
+      ]'
+```
+
+Above we are getting all documents from the movies collection where the title contains `sth` as substring. You can also define different patterns like `*sth` which means all documents whose title ends with `sth`, or `s*th` meaning all documents whose title starts with `s` and ends with `th`.
 
 </article>
 

@@ -6,12 +6,12 @@
   "sentryPublicUrl": "https://2376aeece9d44a9e947421da2176ee75@sentry.wedeploy.com/6",
   "version": {
     "api": {
-      "android": "1.1.0",
-      "javascript": "4.4.0"
+      "android": "1.2.0",
+      "javascript": "4.5.0"
     },
     "image": {
       "auth": "2.7.0",
-      "data": "2.7.0",
+      "data": "2.8.0",
       "email": "2.7.0",
       "hosting": "2.0.0",
       "liferay": "dxp-sp6-20180530"
