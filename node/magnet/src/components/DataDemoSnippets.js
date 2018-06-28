@@ -29,7 +29,7 @@ export function generateSnippetAndroid(dataDemoInstance) {
 
   let value = `WeDeploy weDeploy = new WeDeploy.Builder().build();`;
 
-  value += `\n\nweDeploy.data("https://data-tv.wedeploy.io")`;
+  value += `\n\nweDeploy.data("https://db-tv.wedeploy.io")`;
 
   let filters = [];
 
@@ -84,7 +84,7 @@ export function generateSnippetSwift(dataDemoInstance) {
     yearsSelected,
   } = dataDemoInstance;
 
-  let value = `WeDeploy.data("https://data-tv.wedeploy.io")`;
+  let value = `WeDeploy.data("https://db-tv.wedeploy.io")`;
   if (series) {
     value += `\n\t.prefix(field: "name", value: "${series}")`;
   }
@@ -135,7 +135,7 @@ export function generateSnippetWeb(dataDemoInstance) {
     yearsSelected,
   } = dataDemoInstance;
 
-  let value = `WeDeploy.data('https://data-tv.wedeploy.io')`;
+  let value = `WeDeploy.data('https://db-tv.wedeploy.io')`;
   if (series) {
     value += `\n\t.prefix('name', '${series}')`;
   }

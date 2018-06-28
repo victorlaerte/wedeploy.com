@@ -130,7 +130,7 @@ export default class DataDemo extends Component {
 
     const {genres, series} = getUserInputQueryValues();
 
-    let data = WeDeploy.data('data-tv.wedeploy.io').withCredentials(false);
+    let data = WeDeploy.data('db-tv.wedeploy.io').withCredentials(false);
 
     if (genres) {
       data = data.prefix('genres', genres);
