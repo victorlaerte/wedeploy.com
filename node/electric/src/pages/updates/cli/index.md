@@ -4,6 +4,14 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.5.7
+  date: June 28th, 2018
+  description: Fix processing flags on command 'we new project'. Minor improvements.
+ -
+  version: 1.5.6
+  date: June 22nd, 2018
+  description: Adding support to upcoming environment feature. Fixed flags on 'we new'. Minor improvements.
+ -
   version: 1.5.5
   date: June 20th, 2018
   description: Show current number of deployed instances on 'we scale' and ask for service before prompting for number of instances on change.
