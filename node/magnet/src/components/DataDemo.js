@@ -116,6 +116,7 @@ export default class DataDemo extends Component {
     this.years = Object.keys(aggregations.years)
       .sort()
       .reverse()
+      .slice(0, 3)
       .map(year => {
         return {
           value: year,
