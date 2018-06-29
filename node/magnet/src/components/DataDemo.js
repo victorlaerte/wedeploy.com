@@ -104,6 +104,7 @@ export default class DataDemo extends Component {
   processSearchAggregationForGenres(aggregations) {
     this.genres = Object.keys(aggregations.genres)
       .sort()
+      .slice(0, 20)
       .map(genre => {
         return {
           value: genre,
