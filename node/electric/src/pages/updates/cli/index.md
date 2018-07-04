@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.5.8
+  date: July 4th, 2018
+  description: Fixed deployment upload failure feedback. Minor improvements.
+ -
   version: 1.5.7
   date: June 28th, 2018
   description: Fix processing flags on command 'we new project'. Minor improvements.
