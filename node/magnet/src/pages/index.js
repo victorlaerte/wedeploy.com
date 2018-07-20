@@ -90,15 +90,17 @@ export default class Index extends Component {
  */
 function getSentryScripts(initialState) {
   switch (initialState.nodeEnv) {
-    case 'development':
-    return '';
+    case 'production':
+    case 'staging':
+      return `
+        <script src="https://cdn.ravenjs.com/3.24.1/raven.min.js" crossorigin="anonymous"></script>
+        <script>
+          Raven.config('${initialState.sentryPublicUrl}').install({
+            environment: '${initialState.nodeEnv}'
+          })
+        </script>
+        `;
   }
-  return `
-      <script src="https://cdn.ravenjs.com/3.24.1/raven.min.js" crossorigin="anonymous"></script>
-      <script>
-        Raven.config('${initialState.sentryPublicUrl}').install()
-      </script>
-      `
 }
 
 Soy.register(Index, templates);

@@ -63,10 +63,12 @@
 
     <script src="https://cdn.wedeploy.com/api/latest/wedeploy.js"></script>
 
-    {if $site.env == 'production'}
+    {if $site.env == 'production' or $site.env == 'staging'}
       <script src="https://cdn.ravenjs.com/3.24.1/raven.min.js" crossorigin="anonymous"></script>
       <script>
-        Raven.config('{$site.sentryPublicUrl}').install()
+        Raven.config('{$site.sentryPublicUrl}').install({lb}
+          environment: '{$site.env}'
+        {rb});
       </script>
     {/if}
 

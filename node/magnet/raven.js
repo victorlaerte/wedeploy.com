@@ -2,8 +2,9 @@ import Raven from 'raven';
 
 export const controller = app => {
   switch (process.env.NODE_ENV) {
-    case 'development':
+    case 'production':
+    case 'staging':
+      app.use(Raven.errorHandler());
       return;
   }
-  app.use(Raven.errorHandler());
 };
