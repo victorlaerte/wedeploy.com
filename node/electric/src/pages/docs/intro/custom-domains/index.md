@@ -127,4 +127,4 @@ If you have configured the name servers of the domain to be some of WeDeploy's n
 
 ## What's next?
 
-* Learn more about using [environment variables](/docs/intro/environment-variables/).
+* Learn more about using [environment variables](/docs/intro/environments/).
