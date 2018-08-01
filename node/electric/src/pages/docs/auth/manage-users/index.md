@@ -308,7 +308,7 @@ WeDeploy
 ```text/x-sh
 curl -X "PATCH" "https://<serviceID>-<projectID>.wedeploy.io/users/<userID>" \
      -H 'Authorization: Bearer <your-project-master-token>' \
-     -H 'Content-Type: application/json'
+     -H 'Content-Type: application/json' \
      -d $'{
         "password": "password",
         "email": "eleven@hawkinslab.com",
