@@ -10,7 +10,7 @@ updates:
  -
   version: 1.5.10
   date: July 12th, 2018
-  description: Only print first 12 chars of instance ids. Autoconnect to instance on "we shell" when only one instance is running. Minor improvements.
+  description: Only print first 12 chars of instance ids. Autoconnect to instance on 'we shell' when only one instance is running. Minor improvements.
  -
   version: 1.5.9
   date: July 8th, 2018
