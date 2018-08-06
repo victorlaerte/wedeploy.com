@@ -4,6 +4,18 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 1.6.0
+  date: August 5th, 2018
+  description: Improved Windows install experience. Removed project id confirmation when extracting it from working directory. Minor improvements.
+ -
+  version: 1.5.10
+  date: July 12th, 2018
+  description: Only print first 12 chars of instance ids. Autoconnect to instance on "we shell" when only one instance is running. Minor improvements.
+ -
+  version: 1.5.9
+  date: July 8th, 2018
+  description: Added 'we list instances' command. Improved instance support. Minor improvements.
+ -
   version: 1.5.8
   date: July 4th, 2018
   description: Fixed deployment upload failure feedback. Minor improvements.
