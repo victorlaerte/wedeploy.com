@@ -25,7 +25,7 @@ Then try running `we`. You should be able to see the help.
 In case of error, try to install it using `sudo`:
 
 ```text
-curl http://cdn.wedeploy.com/cli/latest/wedeploy.sh -fsSL | sudo bash
+curl https://cdn.wedeploy.com/cli/latest/wedeploy.sh -fsSL | sudo bash
 ```
 
 If you use Windows, check the [Windows amd64 installer](https://bin.equinox.io/c/8WGbGy94JXa/we-stable-windows-amd64.msi). For other systems, see a list of [all builds available](https://dl.equinox.io/wedeploy/we/stable).
