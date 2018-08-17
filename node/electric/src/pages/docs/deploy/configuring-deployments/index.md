@@ -330,7 +330,7 @@ When you declare a healthCheck, these are the default configurations that you ca
 
 <h4 id="dependencies">dependencies</h4>
 
-For may complex applications, it is important to deploy your services in a specific order. For example, you may want your database to deploy before your frontend UI. You may also want to automatically cancel the deployment of your UI if the database doesn't fully deploy. For this, you can declare service dependencies in your `wedeploy.json`.
+For many complex applications, it is important to deploy your services in a specific order. For example, you may want your database to deploy before your frontend UI. You may also want to automatically cancel the deployment of your UI if the database doesn't fully deploy. For this, you can declare service dependencies in your `wedeploy.json`.
 
 ```application/json
 {
