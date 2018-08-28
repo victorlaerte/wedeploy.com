@@ -98,7 +98,7 @@ You can prevent unauthorized applications and users from accessing certain endpo
   {
     "path": "/movies/*",
     "auth": {
-      "validator": "$auth != null"
+      "validator": "$auth !== null"
     }
   }
 ]
@@ -188,7 +188,7 @@ The validator can be used as an integration with the [Auth service](/docs/auth/)
 {
   "path": "/movies/*",
   "auth": {
-    "validator": "$auth != null"
+    "validator": "$auth !== null"
   }
 }
 ```
