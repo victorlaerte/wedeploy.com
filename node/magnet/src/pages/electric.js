@@ -13,6 +13,7 @@ export const controller = app => {
   app.use('/scripts', express.static(path.join(electricPath, 'scripts')));
   app.use('/styles', express.static(path.join(electricPath, 'styles')));
   app.use('/terms', express.static(path.join(electricPath, 'terms')));
+  app.use('/security', express.static(path.join(electricPath, 'security')));
   app.use('/tutorials', express.static(path.join(electricPath, 'tutorials')));
   app.use('/updates', express.static(path.join(electricPath, 'updates')));
   app.use('/vendor', express.static(path.join(electricPath, 'vendor')));
