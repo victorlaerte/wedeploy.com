@@ -12,7 +12,7 @@ weight: 3
 
 <aside>
 
-If you are unfamiliar with how you can apply this concept, please visit our main [Environment Variables](/docs/intro/environment-variables/) page.
+If you are unfamiliar with how you can apply this concept, please visit our main [Environment Variables](/docs/intro/environments/#3) page.
 
 </aside>
 
