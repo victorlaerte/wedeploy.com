@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 7.1.0-ga1-1.4
+  date: Sep 20th, 2018
+  description: New licenses batch
+ -
   version: dxp-sp6-20180530
   date: Sep 20th, 2018
   description: New licenses batch
