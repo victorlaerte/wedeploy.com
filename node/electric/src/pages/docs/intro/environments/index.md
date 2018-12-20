@@ -42,7 +42,7 @@ From there, you can create a new environment and choose to copy from an existing
   <img class="blog-img-shadow" src="/images/blog/post-30--2.png" alt="creating environment">
 </figure>
 
-Each Environment behaves like a separate project so you can add unique collaborators, custom domains, environment variables, and even services to each one.
+Each Environment behaves like a separate project so you can add unique team member, custom domains, environment variables, and even services to each one.
 
 This means each environment can have its own characteristics like datasets or user access.
 

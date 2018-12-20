@@ -44,7 +44,7 @@ From there, you can create a new environment by duplicating that original enviro
   <figcaption>Easily duplicate environments and customize environment variables</figcaption>
 </figure>
 
-Each Environment behaves like a separate project so you can add unique collaborators, custom domains, environment variables, and even services to each one.
+Each Environment behaves like a separate project so you can add unique team members, custom domains, environment variables, and even services to each one.
 
 This means each environment can have its own characteristics like datasets or user access.
 
