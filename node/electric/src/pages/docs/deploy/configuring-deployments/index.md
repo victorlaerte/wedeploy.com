@@ -343,7 +343,9 @@ In the example above, the `ui` service will wait to deploy until the `db` and `d
 
 <h4 id="zeroDowntime">zeroDowntime</h4>
 
-By default, all services utilize our zero downtime deployment. However, some services, like those using volumes, are not designed for this kind of deployment. In these cases, you can simply turn off the zero downtime deployment of your service.
+By default, all services utilize our zero downtime deployment. This means that your service will always be up, even if you redeploy it. When this property is true, any deployment is made in a background instance which replaces the current one when it is up. The background instance is up if it passes its [healthCheck](#healthCheck).
+
+However, some services, like databases, are not designed for this kind of deployment. In these cases, you can simply turn off the zero downtime deployment of your service.
 
 ```application/json
 {
