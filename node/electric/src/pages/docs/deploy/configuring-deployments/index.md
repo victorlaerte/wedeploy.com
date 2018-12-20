@@ -55,13 +55,14 @@ To learn more about an individual configuration, click on a key in the table bel
 | **[port](#port)**                   | Number  |         | Exposed service port                |
 | **[cpu](#scale)**                   | Number  | 1       | Number of processing units          |
 | **[scale](#scale)**                 | Number  | 1       | Maximum number of instances         |
-| **[memory](#scale)**                | Number  | 512     | Amount of computing memory          |
+| **[memory](#scale)**                | Number  | 512     | Amount of computing memory in MB    |
 | **[volumes](#volumes)**             | Object  |         | Persistent database file system     |
 | **[command](#command)**             | Array   |         | Command to be performed when the container starts |
 | **[customDomains](#customDomains)** | Array   |         | Set custom domain names             |
-| **[healthCheck](#healthCheck)**     | Object  |         | How the services' health is checked |
+| **[healthCheck](#healthCheck)**     | Object  |localhost| How the services' health is checked |
 | **[dependencies](#dependencies)**   | Array   |         | Deployment dependency order         |
 | **[zeroDowntime](#zeroDowntime)**   | Boolean | true    | Interruption during deployment      |
+| **[public](#public)**               | Boolean | true    | Controls public access              |
 
 </div>
 
@@ -219,7 +220,7 @@ The available resources for these variables are dependent upon the usage limits 
 
 <h4 id="volumes">volumes</h4>
 
-For many applications, it is necessary to be able to write and access a persistent file system so that your important files can keep their state even after re-deployment or restarting your service. We make this possible with `volumes`. 
+For many applications, it is necessary to be able to write and access a persistent file system so that your important files can keep their state even after re-deployment or restarting your service. We make this possible with `volumes`.
 
 ```application/json
 {
@@ -259,7 +260,7 @@ In this scenario, this is how the services would connect to the volumes via thei
 }
 ```
 
-In this example, the `photos` volume will be shared and both services can access the files within that volume by the declared paths. We only accept absolute paths and not relative ones. 
+In this example, the `photos` volume will be shared and both services can access the files within that volume by the declared paths. We only accept absolute paths and not relative ones.
 
 **Note:** Once you delete your project, any files in the volumes will also be destroyed.
 
@@ -280,7 +281,7 @@ If you want to know more about custom domains, check our [Custom Domain Document
 
 Health checks are the way we test the status of your service. We also use them know if a new deployment of your service was successful.
 
-The default health check simply looks to see if the service (or more specifically your container) is running, but certain types of services need unique status checks. To do this, you can add a custom health check as a `url` or a `command`. 
+The default health check simply looks to see if the service (or more specifically your container) is running, but certain types of services need unique status checks. To do this, you can add a custom health check as a `url` or a `command`.
 
 If you provide a `url`, we will ping that address until we get a `200` response. For the command, you have more control over what kind of action we take when checking your service health.
 
@@ -294,6 +295,12 @@ Here is an example of the `url` approach:
   }
 }
 ```
+
+<aside>
+
+If you do not add `healthCheck` to your `wedeploy.json`, we will use the example above as default `healthCheck` of your service.
+
+</aside>
 
 By putting `localhost` as the health check URL, we will ping the IP of your service. You could also specify a specific path like `localhost/blog/` or a certain port like `localhost:4000`.
 
@@ -374,5 +381,28 @@ There are some applications that require a command to be started. This property 
 Note that the property `command` from `wedeploy.json` is different from the `command` used to `healthCheck`.
 
 </aside>
+
+<h4 id="public">public</h4>
+
+Sometimes you may not want your service to be accessible from outside of your project. By adding `"public": false` to your `wedeploy.json`, your service will be removed from our load balancer. This will make the service inaccessible from public access but still accessible by other project services through the project's private network.
+
+```application/json
+{
+  "id": "app",
+  "public": false
+}
+```
+
+As previously described, once the `public` field is configured to `false`, the service is only reachable inside the project network. This means that the only way to make requests to a service like this is using it's `id` as its address. For example, you can make a GET for a service by executing the following.
+
+```
+curl -X GET serviceId
+```
+
+The request via API would look like the code bellow.
+
+```javascript
+WeDeploy.url(http://${serviceId}).get()
+```
 
 </article>
