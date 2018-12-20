@@ -599,7 +599,7 @@ Above we are getting all documents in the movies collection where the title has 
 
 <h5 id="phrase">phrase</h5>
 
-You can filter content containing the phrase with the prefix of the last word of your query. This is a helpful tool for providing auto-complete prompts.
+You can filter content containing the phrase of your text query. This is a helpful tool for providing auto-complete prompts.
 
 ```javascript
 WeDeploy
