@@ -231,6 +231,8 @@ For many applications, it is necessary to be able to write and access a persiste
 }
 ```
 
+Volumes ids must contain only alphanumeric characters. The valid regex is `/^[a-z0-9]+$/i`.
+
 Each volume (or file system drive), is mounted with a unique `id` that can be accessed by any service in that project. For example, if you create service1 and deploy with a volume declared as `photos`, you can access that same volume with service2 by declaring the same volume `id`.
 
 In this scenario, this is how the services would connect to the volumes via their `wedeploy.json`:
