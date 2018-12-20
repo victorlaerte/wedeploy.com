@@ -65,10 +65,18 @@ myservice
 
 <aside>
 
-###### <span class="icon-16-alert"></span> Attention
+###### <span class="icon-16-star"></span> Pro Tip
 
-Behind the scenes, we run **npm install --unsafe-perm --production** which means that your application will run in production mode. Because of that, make sure your dependencies are
-on `“dependencies”` instead of `“devDependencies”` inside your `package.json`, otherwise they will not be installed.
+If you want to run your application in production mode, you have to add an environment variable called `NODE_ENV`.
+
+```application/json
+{
+  "id": "myservice",
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
+```
 
 </aside>
 
