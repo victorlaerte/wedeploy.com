@@ -4,6 +4,10 @@ description: "Check out the latest releases of the WeDeploy"
 layout: "updates"
 updates:
  -
+  version: 7.1.0-ga1-1.6
+  date: Jan 23th, 2019
+  description: New licenses batch
+ -
   version: 7.1.0-ga1-1.4
   date: Sep 20th, 2018
   description: New licenses batch
