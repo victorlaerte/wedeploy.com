@@ -296,12 +296,6 @@ Here is an example of the `url` approach:
 }
 ```
 
-<aside>
-
-If you do not add `healthCheck` to your `wedeploy.json`, we will use the example above as default `healthCheck` of your service.
-
-</aside>
-
 By putting `localhost` as the health check URL, we will ping the IP of your service. You could also specify a specific path like `localhost/blog/` or a certain port like `localhost:4000`.
 
 For more complex health checks, you can add commands to check the uptime of your service.
@@ -317,25 +311,10 @@ For more complex health checks, you can add commands to check the uptime of your
 
 With both of these approaches, we provide you with other customizable configurations.
 
-- `interval`: How many seconds should pass between health check tries
-- `timeout`: How many seconds the health check will try to test
-- `startPeriod`: How many seconds the healthCheck should wait after the service is up before testing
-- `retries`: How many times the healthCheck will retry before declaring your service as `unhealthy`
-
-When you declare a healthCheck, these are the default configurations that you can change at any time in your `wedeploy.json`:
-
-```application/json
-{
-  "id": "db",
-  "healthCheck": {
-    "command": "curl -X GET --silent --fail 'localhost/blog/'",
-    "interval": 5,
-    "timeout": 5,
-    "startPeriod": 1,
-    "retries": 10
-  }
-}
-```
+- `interval`: How many seconds should pass between health check tries. The default value for it is `30`.
+- `timeout`: How long we will wait for your service to answer. The default value for it is `30`.
+- `startPeriod`: How many seconds the healthCheck should wait after the service is up before testing. The default value for it is `0`.
+- `retries`: How many times the healthCheck will retry before declaring your service as `unhealthy`. The default value for it is `3`.
 
 <h4 id="dependencies">dependencies</h4>
 
