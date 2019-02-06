@@ -456,7 +456,7 @@ curl -X "POST" "https://<serviceID>-<projectID>.wedeploy.io/users" \
      -d '{
         "email": "user@domain.com",
         "password": "abc",
-        "supportedScopes: ["someScope"]
+        "supportedScopes": ["someScope"]
       }'
 ```
 
